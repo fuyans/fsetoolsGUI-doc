@@ -22,7 +22,7 @@ project = 'FSETools'
 author = 'Ian Fu, OFR Consultants Ltd'
 copyright = f'2017-{datetime.datetime.now().strftime("%Y")}, {author}'
 version = '0.0.8'
-release = '0.0.8'
+release = '0.0.1'
 language = 'en'
 
 # -- General configuration ---------------------------------------------------
