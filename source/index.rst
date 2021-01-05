@@ -6,6 +6,8 @@
 FSETools GUI documentation
 ==========================
 
+`Latest build <https://fsetoolsgui.readthedocs.io/en/latest/>`_
+
 todo fsetools intended for: quick and validated calcs
 
 todo fsetools NOT intended for: black box toolsets
