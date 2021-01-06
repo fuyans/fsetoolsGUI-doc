@@ -1,6 +1,3 @@
-SAFIR
-=====
-
 .. toctree::
    :maxdepth: 3
 

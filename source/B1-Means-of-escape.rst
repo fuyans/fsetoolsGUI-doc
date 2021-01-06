@@ -1,6 +1,3 @@
-B1 Means of escape
-==================
-
 .. toctree::
    :maxdepth: 3
 

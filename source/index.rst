@@ -1,29 +1,65 @@
-.. fsetoolsgui documentation master file, created by
-   sphinx-quickstart on Fri Nov 20 23:16:17 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 FSETools GUI documentation
 ==========================
 
-`Latest build <https://fsetoolsgui.readthedocs.io/en/latest/>`_
+Latest version of this documentation can be found `here <https://fsetoolsgui.readthedocs.io/en/latest/>`_.
 
-todo fsetools intended for: quick and validated calcs
+`FSETools` compiles several Fire Safety Engineering helper tools which I find useful in the past few years of my working experience in the industry. `FSETools` is designed as a helper tool to optimise the design process by achieving a greater efficiency, accuracy and consistency. End users (i.e. engineers) are expected to have a through understanding the theory behind these tools and are responsible to backup/explain the results.
 
-todo fsetools NOT intended for: black box toolsets
+`FSETools` is named after Fire Safety Engineering (FSE) tools. It is build based on open source project `fsetools <https://github.com/fsepy/fsetools>`_ and `SfePrapy <https://github.com/fsepy/sfeprapy>`_. A number of libraries, PyQt5, NumPy, Scipy, Matplotlib etc, are also used to make `FSETools` functional.
 
-todo explain the GUI suffix
+.. toctree::
+    :maxdepth: 3
+    :caption: B1 Means of escape
 
-Contents
---------
+    B1-Means-of-escape.rst
+
+.. toctree::
+    :maxdepth: 3
+    :caption: B3 Elements of structure
+
+    B3-Elements-of-structure.rst
+
+.. toctree::
+    :maxdepth: 3
+    :caption: B4 External fire spread
+
+    B4-External-fire-spread.rst
+
+.. toctree::
+    :maxdepth: 3
+    :caption: PRA
+
+    B0-PRA.rst
+
+.. toctree::
+    :maxdepth: 3
+    :caption: SAFIR
+
+    B0-SAFIR.rst
 
 .. toctree::
    :maxdepth: 3
+   :caption: Miscellaneous
 
-   content/Installation.rst
-   B1-Means-of-escape.rst
-   B3-Elements-of-structure.rst
-   B4-External-fire-spread.rst
-   B0-PRA.rst
-   B0-SAFIR.rst
-   B0-Miscenllaneous.rst
+   B0-Miscellaneous.rst
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Installation
+
+   Installation.rst
+
+Authors and contributors
+========================
+
+Ian Fu, ian.fu@ofrconsultants.com: Programming, UI, documentation.
+
+Danny Hopkin, danny.hopkin@ofrconsultants.com: Programming.
+
+Stephy Tsang, stephy.tsang@ofrconsultants.com: UI and artworks.
+
+Ieuan Rickard, ieuan.rickard@ofrconsultants.com: General review.
+
+Zak Askif, zak.askif@ofrconsultants.com: General review.
+
+OFR Consultants Ltd.

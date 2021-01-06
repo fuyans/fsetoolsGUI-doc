@@ -1,6 +1,3 @@
-B4 External fire spread
-=======================
-
 .. toctree::
    :maxdepth: 3
 

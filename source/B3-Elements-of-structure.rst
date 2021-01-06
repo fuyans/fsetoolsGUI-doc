@@ -1,6 +1,3 @@
-B3 Elements of structure
-========================
-
 .. toctree::
    :maxdepth: 3
 

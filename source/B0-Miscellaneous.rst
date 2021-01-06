@@ -1,6 +1,3 @@
-Miscenllaneous
-==============
-
 .. toctree::
    :maxdepth: 3
 

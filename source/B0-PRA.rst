@@ -1,7 +1,6 @@
-PRA
-===
-
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
-   content/TRA-Cuboid-model.rst
+    content/PRA-MCS0-processor.rst
+    content/PRA-MCS0-make-plots.rst
+    content/PRA-MCS0-make-fires.rst
