@@ -3,9 +3,9 @@ FSETools GUI documentation
 
 Latest version of this documentation can be found `here <https://fsetoolsgui.readthedocs.io/en/latest/>`_.
 
-`FSETools` compiles several Fire Safety Engineering helper tools which I find useful in the past few years of my working experience in the industry. `FSETools` is designed as a helper tool to optimise the design process by achieving a greater efficiency, accuracy and consistency. End users (i.e. engineers) are expected to have a through understanding the theory behind these tools and are responsible to backup/explain the results.
+`FSETools` compiles several Fire Safety Engineering helper tools which I find useful in the past few years of my working experience. `FSETools` is designed to optimise the design process by achieving a greater efficiency, accuracy and consistency. End users (i.e. engineers) are expected to have a through understanding of the theory behind these tools and are responsible to support the results.
 
-`FSETools` is named after Fire Safety Engineering (FSE) tools. It is build based on open source project `fsetools <https://github.com/fsepy/fsetools>`_ and `SfePrapy <https://github.com/fsepy/sfeprapy>`_. A number of libraries, PyQt5, NumPy, Scipy, Matplotlib etc, are also used to make `FSETools` functional.
+`FSETools` is build based on projects `fsetools <https://github.com/fsepy/fsetools>`_ and `SfePrapy <https://github.com/fsepy/sfeprapy>`_. A number of libraries, PyQt5, NumPy, Scipy, Matplotlib etc, are also used to make `FSETools` functional.
 
 .. toctree::
     :maxdepth: 3
