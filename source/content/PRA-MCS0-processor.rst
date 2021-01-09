@@ -8,7 +8,7 @@ MCS0 processor
       - Author
       - Checker
       - Remarks
-    * - 2020/07/01
+    * - 2020/12/01
       - Ian F.
       - Ian F.
       - Initial

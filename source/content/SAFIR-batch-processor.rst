@@ -1,5 +1,5 @@
-MCS0 make fires
----------------
+SAFIR batch processor
+---------------------
 
 .. list-table::
     :header-rows: 1
