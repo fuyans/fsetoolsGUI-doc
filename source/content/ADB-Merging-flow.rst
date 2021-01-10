@@ -12,3 +12,12 @@ ADB Merging flow
       - Ian F.
       - Ian F.
       - Initial
+
+
+.. figure:: ADB-2019/p19.png
+    :width: 100%
+    :alt: ADB 2019, page 19
+
+.. figure:: ADB-2019/p20.png
+    :width: 100%
+    :alt: ADB 2019, page 20

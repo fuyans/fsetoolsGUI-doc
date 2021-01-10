@@ -26,7 +26,7 @@ Installation complete, click Finish to close the installer.
 .. figure:: content/Setup/Setup-4.png
     :alt: Setup: Complete
 
-After successful installation, you should able to run the application.
+The application should be able to run.
 
 .. figure:: content/Setup/Setup-5.png
     :alt: Setup: FSETools
@@ -34,9 +34,19 @@ After successful installation, you should able to run the application.
 MAC OS
 ::::::
 
-todo
+*macOS Big Sur* is currently not supported due to a known `issue <https://github.com/pyinstaller/pyinstaller/issues/5107>`_.
+
+`fsetoolsgui` will be updated to support *macOS Big Sur* once the above issue is fixed. Below are examples before the *Big Sur* update.
+
+.. figure:: content/Setup/mac-app-main.png
+    :width: 300px
+    :alt: main page
+
+.. figure:: content/Setup/mac-app-applet.png
+    :width: 500px
+    :alt: applet page
 
 Python
 ::::::
 
-todo
+The GUI version `fsetools` source code is currently not available. However, all features of `fsetools` can be found `here <https://github.com/fsepy/fsetools>`_.

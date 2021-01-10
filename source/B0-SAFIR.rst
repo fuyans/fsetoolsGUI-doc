@@ -1,4 +1,5 @@
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
-   content/TRA-Cuboid-model.rst
+    content/SAFIR-batch-processor.rst
+    content/SAFIR-tor-to-tem.rst

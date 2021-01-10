@@ -52,14 +52,10 @@ Latest version of this documentation can be found `here <https://fsetoolsgui.rea
 Authors and contributors
 ========================
 
-Ian Fu, ian.fu@ofrconsultants.com: Programming, UI, documentation.
+(non exhaustive)
 
-Danny Hopkin, danny.hopkin@ofrconsultants.com: Programming.
-
-Stephy Tsang, stephy.tsang@ofrconsultants.com: UI and artworks.
-
-Ieuan Rickard, ieuan.rickard@ofrconsultants.com: General review.
-
-Zak Askif, zak.askif@ofrconsultants.com: General review.
-
-OFR Consultants Ltd.
+- Ian Fu, ian.fu@ofrconsultants.com: Programming, UI, documentation.
+- Danny Hopkin, danny.hopkin@ofrconsultants.com: Programming.
+- Stephy Tsang, stephy.tsang@ofrconsultants.com: UI and artworks.
+- Ieuan Rickard, ieuan.rickard@ofrconsultants.com: General review.
+- Zak Askif, zak.askif@ofrconsultants.com: General review.
