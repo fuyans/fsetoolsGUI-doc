@@ -11,37 +11,47 @@ Latest version of this documentation can be found `here <https://fsetoolsgui.rea
     :maxdepth: 3
     :caption: B1 Means of escape
 
-    B1-Means-of-escape.rst
+    content/ADB-Merging-flow.rst
+    content/BS-9999-Merging-flow.rst
+    content/PD-7974-1-Flame-height.rst
+    content/PD-7974-1-Heat-detector-activation.rst
 
 .. toctree::
     :maxdepth: 3
     :caption: B3 Elements of structure
 
-    B3-Elements-of-structure.rst
+    content/BS-EN-1991-1-2-Parametric-fire.rst
+    content/BS-EN-1991-1-2-Thermal-actions-for-external-members.rst
+    content/BS-EN-1993-1-2-Heat-transfer-to-external-steelwork.rst
 
 .. toctree::
     :maxdepth: 3
     :caption: B4 External fire spread
 
-    B4-External-fire-spread.rst
+   content/BRE-187-Parallel-oriented-receiver.rst
+   content/BRE-187-Perpendicular-oriented-receiver.rst
+   content/TRA-Cuboid-model.rst
 
 .. toctree::
     :maxdepth: 3
     :caption: PRA
 
-    B0-PRA.rst
+    content/PRA-MCS0-processor.rst
+    content/PRA-MCS0-make-plots.rst
+    content/PRA-MCS0-make-fires.rst
 
 .. toctree::
     :maxdepth: 3
     :caption: SAFIR
 
-    B0-SAFIR.rst
+    content/SAFIR-batch-processor.rst
+    content/SAFIR-tor-to-tem.rst
 
 .. toctree::
    :maxdepth: 3
    :caption: Miscellaneous
 
-   B0-Miscellaneous.rst
+    content/OFR-Naming-convention.rst
 
 .. toctree::
    :maxdepth: 3
