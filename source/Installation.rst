@@ -49,4 +49,4 @@ MAC OS
 Python
 ::::::
 
-The GUI version `fsetools` source code is currently not available. However, all features of `fsetools` can be found `here <https://github.com/fsepy/fsetools>`_.
+See `fsetools <https://github.com/fsepy/fsetools>`_ and `SfePrapy <https://github.com/fsepy/sfeprapy>`_.
