@@ -31,8 +31,8 @@ The application should be able to run.
 .. figure:: content/Setup/Setup-5.png
     :alt: Setup: FSETools
 
-MAC OS
-::::::
+macOS
+:::::
 
 *macOS Big Sur* is currently not supported due to a known `issue <https://github.com/pyinstaller/pyinstaller/issues/5107>`_.
 
@@ -49,4 +49,4 @@ MAC OS
 Python
 ::::::
 
-See `fsetools <https://github.com/fsepy/fsetools>`_ and `SfePrapy <https://github.com/fsepy/sfeprapy>`_.
+GUI version of `FSETools` does not support Python installation. However, its core features are achieved through `fsetools <https://github.com/fsepy/fsetools>`_ and `SfePrapy <https://github.com/fsepy/sfeprapy>`_ which can be installed as a Python package.

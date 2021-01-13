@@ -13,77 +13,102 @@ OFR Naming convention
       - Ian F.
       - Initial
 
-Original file issued by Simon L and summarised as below (should be in
-order):
 
--  **Date**
+.. list-table:: OFR Naming convention
+    :widths: 3 7 90
+    :header-rows: 1
 
-   -  **YYMMDD**, in reverse number format, e.g. 180601.
-   -  Ensures that when viewed in file management database the files
-      sort in date order.
+    *
+        - Order
+        - Item
+        - Description
+    *
+        - 1
+        - **Date**
+        -
+            -  **YYMMDD**, in reverse number format, e.g. 180601.
+            -  Ensures that when viewed in file management database the files sort in date order.
+    *
+        - 2
+        - **Revision**
+        -
+            -  **Q##**, internal review drafts
 
--  **Revision**
+                -  Q00, first issue for internal review.
+                -  Q01, reviewer’s comments.
+                -  Q02, authoriser’s comments.
 
-   -  **Q##**, internal review drafts
+            -  **D##**, draft issued outside for comments
 
-      -  Q00, first issue for internal review.
-      -  Q01, reviewer’s comments.
-      -  Q02, authoriser’s comments.
+                -  D00, first issue to others for comment.
+                -  D01, Subsequent external reviews.
 
-   -  **D##**, draft issued outside for comments
+            -  **R##**, formal issue revision
 
-      -  D00, first issue to others for comment.
-      -  D01, Subsequent external reviews.
+                -  R00, first issue.
+                -  R01, second issue.
 
-   -  **R##**, formal issue revision
+            -  Reports should change formal issue revision when information that they are based upon changes. It is not the intent to use the Draft status to pick up design changes etc.
+            -  At each revision change (including Q and D prefixes) the reason for change should be noted on the QA sheet and changes made using track changes with each version being saved to provide an audit trial.
+    *
+        - 3
+        - **Project reference**
+        -
+            -  **OO#####**, replace OO with the originated office (i.e. LO for London, MA for Manchester etc.).
+    *
+        - 4
+        - **Project stage**
+        -
+            -  Sub work packages or similar, e.g. WP1. It is recommended to use codes aligned to timesheet entry when possible.
+    *
+        - 5
+        - **Title**
+        -
+            -  Plain English descriptor, e.g. “Outline_fire_safety_strategy”.
+    *
+        - 6
+        - **Document type**
+        -
+            -  **GA**, general admin.
+            -  **MD**, marketing documents.
+            -  **FP**, fee proposal documents.
+            -  **LT**, Letter.
+            -  **DN**, design note.
+            -  **OF**, outline strategy.
+            -  **DF**, detailed strategy.
+            -  **RF**, retrospective strategy.
+            -  **FA**, fire risk assessment.
+            -  **FS**, fire survey report.
+            -  **FN**, file note.
+            -  **MN**, meeting notes.
+            -  **CS**, Calculation sheet.
+            -  **SK**, sketch.
+            -  **DW**, drawing.
+            -  **XO**, expert opinion.
+    *
+        - 7
+        - **Security status**
+        -
+            -  **CIC**, commercial in confidence.
+            -  **WPC**, without prejudice and confidential.
+            -  **SDS**, secure document.
+            -  **FID**, free issue document (no security status).
 
-      -  R00, first issue.
-      -  R01, second issue.
+.. math::
+    :nowrap:
 
-   -  Reports should change formal issue revision when information that
-      they are based upon changes. It is not the intent to use the Draft
-      status to pick up design changes etc.
-   -  At each revision change (including Q and D prefixes) the reason
-      for change should be noted on the QA sheet and changes made using
-      track changes with each version being saved to provide an audit
-      trial.
-
--  **Project reference**
-
-   -  **OO#####**, replace OO with the originated office (i.e. LO for
-      London, MA for Manchester etc.).
-
--  **Project stage**
-
-   -  Sub work packages or similar, e.g. WP1. It is recommended to use
-      codes aligned to timesheet entry when possible.
-
--  **Title**
-
-   -  Plain English descriptor, e.g. “Outline_fire_safety_strategy”.
-
--  **Document type**
-
-   -  **GA**, general admin.
-   -  **MD**, marketing documents.
-   -  **FP**, fee proposal documents.
-   -  **LT**, Letter.
-   -  **DN**, design note.
-   -  **OF**, outline strategy.
-   -  **DF**, detailed strategy.
-   -  **RF**, retrospective strategy.
-   -  **FA**, fire risk assessment.
-   -  **FS**, fire survey report.
-   -  **FN**, file note.
-   -  **MN**, meeting notes.
-   -  **CS**, Calculation sheet.
-   -  **SK**, sketch.
-   -  **DW**, drawing.
-   -  **XO**, expert opinion.
-
--  **Security status**
-
-   -  **CIC**, commercial in confidence.
-   -  **WPC**, without prejudice and confidential.
-   -  **SDS**, secure document.
-   -  **FID**, free issue document (no security status).
+    \[
+    \lambda =
+    \left\{
+    \begin{array}{
+     @{}% no padding
+     l@{\quad}% some padding
+     r@{}% no padding
+     >{{}}r@{}% no padding
+     >{{}}l@{}% no padding
+    }
+    \frac{2}{3}h, &\text{no forced draught } \left[ False\right]\\
+    \operatorname{min}\left({x, \frac{hx}{z}}\right)  &\text{forced draught }    \left[ True\right]\\
+    \end{array}
+    \right.
+    \]

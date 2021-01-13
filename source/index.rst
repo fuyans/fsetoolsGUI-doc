@@ -8,7 +8,7 @@ Latest documentation can be found `here <https://fsetoolsgui.readthedocs.io/en/l
 `FSETools` is build based on projects `fsetools <https://github.com/fsepy/fsetools>`_ and `SfePrapy <https://github.com/fsepy/sfeprapy>`_. A number of libraries (PyQt5, NumPy, Scipy, Matplotlib etc) are also used to make `FSETools` functional.
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
     :caption: B1 Means of escape
 
     content/ADB-Merging-flow.rst
@@ -17,7 +17,7 @@ Latest documentation can be found `here <https://fsetoolsgui.readthedocs.io/en/l
     content/PD-7974-1-Heat-detector-activation.rst
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
     :caption: B3 Elements of structure
 
     content/BS-EN-1991-1-2-Parametric-fire.rst
@@ -25,15 +25,15 @@ Latest documentation can be found `here <https://fsetoolsgui.readthedocs.io/en/l
     content/BS-EN-1993-1-2-Heat-transfer-to-external-steelwork.rst
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
     :caption: B4 External fire spread
 
-   content/BRE-187-Parallel-oriented-receiver.rst
-   content/BRE-187-Perpendicular-oriented-receiver.rst
-   content/TRA-Cuboid-model.rst
+    content/BRE-187-Parallel-oriented-receiver.rst
+    content/BRE-187-Perpendicular-oriented-receiver.rst
+    content/TRA-Cuboid-model.rst
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
     :caption: PRA
 
     content/PRA-MCS0-processor.rst
@@ -41,23 +41,29 @@ Latest documentation can be found `here <https://fsetoolsgui.readthedocs.io/en/l
     content/PRA-MCS0-make-fires.rst
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
     :caption: SAFIR
 
     content/SAFIR-batch-processor.rst
     content/SAFIR-tor-to-tem.rst
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Miscellaneous
+    :maxdepth: 1
+    :caption: Miscellaneous
 
     content/OFR-Naming-convention.rst
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: Installation
 
    Installation.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Keyboard shortcut
+
+   Keyboard-shortcuts.rst
 
 Authors and contributors
 ========================
