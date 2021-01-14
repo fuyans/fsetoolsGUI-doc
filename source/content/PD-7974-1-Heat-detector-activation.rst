@@ -3,6 +3,7 @@ PD 7974-1 Heat detector activation
 
 .. list-table::
     :header-rows: 1
+    :width: 5, 5, 5, 85
 
     * - Date
       - Author

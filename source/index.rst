@@ -53,17 +53,20 @@ Latest documentation can be found `here <https://fsetoolsgui.readthedocs.io/en/l
 
     content/OFR-Naming-convention.rst
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Installation
+Keyboard shortcuts
+==================
 
-   Installation.rst
+.. include:: Installation.rst
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Keyboard shortcut
+Keyboard shortcuts
+==================
 
-   Keyboard-shortcuts.rst
+.. include:: Keyboard-shortcuts.rst
+
+Versions and updates
+====================
+
+.. include:: Versions-and-updates.rst
 
 Authors and contributors
 ========================
