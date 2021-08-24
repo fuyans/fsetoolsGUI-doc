@@ -8,7 +8,7 @@ if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )
 set SOURCEDIR=source
-set BUILDDIR=../fsetoolsGUI/fsetoolsGUI/docs
+set BUILDDIR=./build
 
 if "%1" == "" goto help
 
@@ -27,7 +27,7 @@ if errorlevel 9009 (
 
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 
-rd /s /q ..\fsetoolsGUI\docs\doctrees
+rd /s /q ..\sfeprapy-doc\build\doctrees
 
 goto end
 

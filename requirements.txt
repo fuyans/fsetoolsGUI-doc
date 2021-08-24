@@ -1,4 +1,6 @@
-sphinx<=3.1.2
-sphinx_markdown_tables>=0.0.15
+sphinx>=3.5.4
+numpydoc>=1.1.0
 recommonmark>=0.7.1
-sphinx-rtd-theme>=0.5.1
+jupyter_sphinx>=0.3.2
+pydata_sphinx_theme>=0.6.1
+nbsphinx>=0.8.4
