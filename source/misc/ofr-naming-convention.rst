@@ -1,18 +1,38 @@
-OFR Naming convention
----------------------
+OFR Naming Convention
+=====================
 
-.. list-table::
-    :header-rows: 1
+Why do we need a file naming convention?
 
-    * - Date
-      - Author
-      - Checker
-      - Remarks
-    * - 2020/03/30
-      - Ian F.
-      - Ian F.
-      - Initial
+    We are a big team and we have some major projects with teams of engineers leading parallel delivery, we need some consistency to manage this from a QA perspective [LINK].
+    Looking back and quickly identifying key project documents is much simpler when there is some rigour to the naming protocol.
+    This level of rigour is expected for ISO 9001.
 
+Why is it so complicated?
+
+    Really, it isn’t complicated. It’s date, revision, project name and a plain English name, plus two optional fields (file type and security level).
+    The “file type” and “security status” fields are deliberately at the end so that they can be left off if not considered relevant, but the preference is to use them.
+
+Why reverse date?
+
+    Because it neatly arranges files in order when looking by name.
+
+Why not just use sequential revision numbers?
+
+    For ISO 9001 we need to track revisions before they are issued.
+    We need to differentiate between internal revisions and client comments.
+    Won’t this mean saving a file loads of times? Yes, but you should be doing that already for QA!
+    By defining that we start with 00 and move up from there and that we use Q for internal QA, D for external comments and R for formal revisions we just get some order to this.
+
+Why use project number not name?
+
+    Because project names change, numbers do not.
+    Because project names are sometimes long, numbers are not.
+
+What is “project stage”?
+
+    This can be plain English or the RIBA stage or Works Package Stage or specific site within a portfolio.
+    The key is that it should match the sub-project name that the work is being delivered under.
+    Every project has sub-projects that you book time to, simply use the same one.
 
 .. list-table:: OFR Naming convention
     :widths: 3 7 90
@@ -94,21 +114,16 @@ OFR Naming convention
             -  **SDS**, secure document.
             -  **FID**, free issue document (no security status).
 
-.. math::
-    :nowrap:
+**Quality Assurance**
 
-    \[
-    \lambda =
-    \left\{
-    \begin{array}{
-     @{}% no padding
-     l@{\quad}% some padding
-     r@{}% no padding
-     >{{}}r@{}% no padding
-     >{{}}l@{}% no padding
-    }
-    \frac{2}{3}h, &\text{no forced draught } \left[ False\right]\\
-    \operatorname{min}\left({x, \frac{hx}{z}}\right)  &\text{forced draught }    \left[ True\right]\\
-    \end{array}
-    \right.
-    \]
+.. list-table::
+    :header-rows: 1
+
+    * - Date
+      - Author
+      - Checker
+      - Remarks
+    * - 2020/03/30
+      - Ian F.
+      - Ian F.
+      - Initial

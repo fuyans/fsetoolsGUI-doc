@@ -7,9 +7,9 @@ needs_sphinx = '3.2.0'
 
 # -- Project information -----------------------------------------------------
 
-project = 'SFEPRAPY'
+project = 'FSETOOLS'
 author = 'Yan Fu'
-copyright = f'2017-{datetime.datetime.now().strftime("%Y")}, {author}'
+copyright = f'2019-{datetime.datetime.now().strftime("%Y")}, {author}'
 version = '0.8.1'
 # release = '1'
 language = 'en'
@@ -65,7 +65,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/fsepy/sfeprapy",
+            "url": "https://github.com/fuyans/fsetoolsGUI-doc",
             "icon": "fab fa-github-square",
         },
     ],
@@ -93,7 +93,7 @@ html_theme_options = {
 html_context = {
     # "github_url": "https://github.com", # or your GitHub Enterprise interprise
     "github_user": "fuyans",
-    "github_repo": "sfeprapy-doc",
+    "github_repo": "fsetoolsGUI-doc",
     "github_version": "dev",
     "doc_path": "source/",
 }

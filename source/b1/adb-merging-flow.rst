@@ -1,5 +1,5 @@
 ADB Merging flow
-----------------
+****************
 
 .. list-table::
     :header-rows: 1
@@ -14,10 +14,10 @@ ADB Merging flow
       - Initial
 
 
-.. figure:: ADB-2019/p19.png
+.. figure:: adb-merging-flow/p19.png
     :width: 100%
     :alt: ADB 2019, page 19
 
-.. figure:: ADB-2019/p20.png
+.. figure:: adb-merging-flow/p20.png
     :width: 100%
     :alt: ADB 2019, page 20

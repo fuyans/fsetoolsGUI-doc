@@ -14,22 +14,22 @@ BS 9999 Merging flow
       - Initial
 
 
-.. figure:: BS-9999-2017/p66.png
+.. figure:: bs9999-merging-flow/p66.png
     :width: 100%
     :alt: BS 9999 (2017), page 66
 
-.. figure:: BS-9999-2017/p67.png
+.. figure:: bs9999-merging-flow/p67.png
     :width: 100%
     :alt: BS 9999 (2017), page 67
 
-.. figure:: BS-9999-2017/p68.png
+.. figure:: bs9999-merging-flow/p68.png
     :width: 100%
     :alt: BS 9999 (2017), page 68
 
-.. figure:: BS-9999-2017/p69.png
+.. figure:: bs9999-merging-flow/p69.png
     :width: 100%
     :alt: BS 9999 (2017), page 69
 
-.. figure:: BS-9999-2017/p70.png
+.. figure:: bs9999-merging-flow/p70.png
     :width: 100%
     :alt: BS 9999 (2017), page 70
