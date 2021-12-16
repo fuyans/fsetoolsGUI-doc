@@ -12,4 +12,3 @@ Demo
 
 .. figure:: /quick_start/demo/version.gif
     :alt: version
-

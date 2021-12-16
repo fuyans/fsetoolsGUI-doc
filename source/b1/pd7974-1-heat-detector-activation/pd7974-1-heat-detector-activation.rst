@@ -1,12 +1,13 @@
-PD 7974-1 Heat detector activation
-**********************************
+PD 7974 Heat Detector Device Activation
+***************************************
 
-.. figure:: PD-7974-1/p16.jpg
+.. figure:: 8.3.3.jpg
     :width: 100%
-    :alt: PD 7974-1, Page 16
+    :alt: PD 7974-1, Clause 8.3.3, Page 16
 
 
 .. list-table::
+    :widths: 15 15 15 55
     :header-rows: 1
 
     * - Date
