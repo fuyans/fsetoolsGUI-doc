@@ -3,11 +3,11 @@ A Very Brief Introduction
 
 `FSETOOLSGUI` compiles several Fire Safety Engineering helper tools that mostly based on the contemporary guidance documents (e.g. ADB / BS 9999 / BS 7974). `FSETOOLSGUI` is designed to enhance efficiency, accuracy and consistency of fire engineering design process. Users are expected to have thorough understanding of the methodologies behind these tools.
 
-.. list-table:: Mouse actions
+.. list-table:: Mouse Action
    :widths: 25 25
    :header-rows: 1
 
-   * - Mouse Action
+   * - Mouse
      - Effect
    * - Left button pressed
      - To select a single item
@@ -23,7 +23,7 @@ A Very Brief Introduction
    :widths: 25 25
    :header-rows: 1
 
-   * - Key Combination
+   * - Keyboard
      - Effect
    * - Ctrl + A
      - Select all items

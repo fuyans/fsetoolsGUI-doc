@@ -10,7 +10,7 @@ needs_sphinx = '3.2.0'
 project = 'FSETOOLS'
 author = 'Yan Fu'
 copyright = f'2019-{datetime.datetime.now().strftime("%Y")}, {author}'
-version = '0.8.1'
+version = '0.1.dev7'
 # release = '1'
 language = 'en'
 
@@ -83,7 +83,7 @@ html_theme_options = {
     ],
     "collapse_navigation": True,
     "navigation_depth": 2,
-    "show_prev_next": True,
+    "show_prev_next": False,
     "use_edit_page_button": True,
     "navbar_end": ["navbar-icon-links.html", "search-field.html"],
     "search_bar_text": "Search documentation ...",

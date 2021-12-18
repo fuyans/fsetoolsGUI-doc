@@ -1,16 +1,18 @@
 B3
 ##
 
-Internal Fire Spread (Structure)
+Structure
 
 .. toctree::
     :maxdepth: 2
 
-    bsen1-2-param-fire.rst
-    travelling-fire.rst
+    iso834-standard-fire/index.rst
+    bsen1-2-param-fire/index.rst
+    travelling-fire/index.rst
+    travelling-fire-hf/index.rst
 
-    bsen1-2-ext-flame-temp.rst
-    bsen3-2-ext-steel-temp.rst
+    en3-unprotected-steel-heat-transfer/index.rst
+    en3-protected-steel-heat-transfer/index.rst
 
-    safir-batch-processor.rst
-    safir-tor-to-tem.rst
+    bsen1-2-ext-flame-temp/index.rst
+    bsen3-2-ext-steel-temp/index.rst
