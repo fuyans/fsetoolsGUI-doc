@@ -1,7 +1,7 @@
 .. include:: quick_start/intro.rst
-.. include:: quick_start/demo/demo.rst
-.. include:: quick_start/install/install.rst
-.. include:: quick_start/update/update.rst
+.. include:: quick_start/demo/index.rst
+.. include:: quick_start/install/index.rst
+.. include:: quick_start/update/index.rst
 
 .. toctree::
     :maxdepth: 2

@@ -1,5 +1,5 @@
-A Very Brief Introduction
-=========================
+Introduction
+============
 
 `FSETOOLSGUI` compiles several Fire Safety Engineering helper tools that mostly based on the contemporary guidance documents (e.g. ADB / BS 9999 / BS 7974). `FSETOOLSGUI` is designed to enhance efficiency, accuracy and consistency of fire engineering design process. Users are expected to have thorough understanding of the methodologies behind these tools.
 
@@ -31,15 +31,17 @@ A Very Brief Introduction
      - Copy selected item(s)
    * - Ctrl + V
      - Paste copied item(s)
+   * - Del
+     - Delete selected item(s)
    * - Ctrl + O
-     - To open a saved file
+     - Open a saved file
    * - Ctrl + S 
-     - To save current works to a file
+     - Save current scene to a file
    * - Ctrl + Shift + S
-     - To save current works to a new file
+     - To save current scene to a new file
 
    * - R
-     - To creat a Room node
+     - To create a Room node
    * - D
      - To create a Door node
    * - E
