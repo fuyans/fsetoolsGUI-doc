@@ -14,15 +14,15 @@ tools.
     :header-rows: 1
 
     * - Mouse
-     - Effect
+      - Effect
     * - Left button pressed
-     - To select a single item
+      - To select a single item
     * - Left button pressed and hold + move
-     - To select multiple items
+      - To select multiple items
     * - Right button pressed
-     - To call context menu depending upon selection
+      - To call context menu depending upon selection
     * - Middle button hold + move
-     - Move viewport
+      - Move viewport
 
 
 .. list-table:: Keyboard shortcuts
@@ -30,33 +30,33 @@ tools.
     :header-rows: 1
 
     * - Keyboard
-     - Effect
+      - Effect
     * - Ctrl + A
-     - Select all items
+      - Select all items
     * - Ctrl + C
-     - Copy selected item(s)
+      - Copy selected item(s)
     * - Ctrl + V
-     - Paste copied item(s)
+      - Paste copied item(s)
     * - Del
-     - Delete selected item(s)
+      - Delete selected item(s)
     * - Ctrl + O
-     - Open a saved file
+      - Open a saved file
     * - Ctrl + S
-     - Save current scene to a file
+      - Save current scene to a file
     * - Ctrl + Shift + S
-     - To save current scene to a new file
+      - To save current scene to a new file
 
     * - R
-     - To create a Room node
+      - To create a Room node
     * - D
-     - To create a Door node
+      - To create a Door node
     * - E
-     - To create an Exit node
+      - To create an Exit node
     * - S
-     - To create a Stair node
+      - To create a Stair node
     * - X
-     - To create a X node
+      - To create a X node
     * - Ctrl + Shift + R
-     - To toggle b101 visualisation
+      - To toggle b101 visualisation
     * - Ctrl + R
-     - To update b101 flow (also switch on visualisation)
+      - To update b101 flow (also switch on visualisation)
