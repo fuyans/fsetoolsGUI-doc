@@ -133,4 +133,3 @@ dmypy.json
 
 build/*
 source/_build/
-source/quick_start/release.md  # this file is obtained from fsetoolsGUI upon make
