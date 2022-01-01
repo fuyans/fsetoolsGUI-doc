@@ -11,7 +11,7 @@ A license file is required to access B101 features. Follow three simple steps to
         FSETools 0.1.1 202112312253
         Expires in 364 day(s), 2 hour(s) and 9 minute(s)
         UID 00000000-0000-0000-0000-103d1ccd0662
-        Root C:\Program Files (x86)\OFR\FSETOOLSGUI
+        Root C:\Program Files (x86)\FSETOOLSGUI
 
 2. Send these information (particularly version and UID) to Ian to request a licence file (named :code:`b101.fselic`).
 
