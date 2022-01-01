@@ -1,0 +1,25 @@
+B101 License
+============
+
+A license file is required to access B101 features. Follow three simple steps to obtain and install a B101 license file:
+
+1. Click Help -> About to get specification data displayed in Console. Below shows an example.
+
+    ::
+
+        About FSETools:
+        FSETools 0.1.1 202112312253
+        Expires in 364 day(s), 2 hour(s) and 9 minute(s)
+        UID 00000000-0000-0000-0000-103d1ccd0662
+        Root C:\Program Files (x86)\OFR\FSETOOLSGUI
+
+2. Send these information (particularly version and UID) to Ian to request a licence file (named :code:`b101.fselic`).
+
+3. First save the license file :code:`b101.fselic` to an accessible folder (e.g., Desktop or Downloads). Then move the file to the Root folder (path shown in step 1).
+
+Done. Press Ctrl+Shift+B to activate B101 toolbar and access all its features. Note: A license file only works for a
+specific version on a specific machine, meaning upgrading FSETools or run the software on a different machine will
+require a new license file.
+
+.. figure:: /quick_start/b101.png
+    :alt: B101 Example

@@ -97,3 +97,5 @@ html_context = {
     "github_version": "dev",
     "doc_path": "source/",
 }
+
+highlight_language = 'none'  # Switch off highlight when no language is defined

@@ -1,5 +1,7 @@
 @ECHO OFF
 
+copy "..\fsetoolsGUI\RELEASE.md" ".\source\quick_start\release.md"
+
 pushd %~dp0
 
 REM Command file for Sphinx documentation

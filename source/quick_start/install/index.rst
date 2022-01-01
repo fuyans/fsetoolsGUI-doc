@@ -11,15 +11,10 @@ You may see a pop-up dialog asking to uninstall previous versions (if exist). Gi
 .. figure:: /quick_start/install/installer-setup-uninstall-previous.png
     :alt: Setup: Uninstall previous version
 
-Click **Next** to start installation.
+Click **Next** to start installation then wait for the installation progress to complete.
 
 .. figure:: /quick_start/install/installer-setup-1.png
     :alt: Setup: Welcome
-
-Wait for installation to progress.
-
-.. figure:: /quick_start/install/installer-setup-2.png
-    :alt: Setup: Installing
 
 Installation complete, click Finish to close the installer.
 

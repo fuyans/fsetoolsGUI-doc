@@ -129,9 +129,8 @@ venv.bak/
 dmypy.json
 
 # project files
-!source/*
+#!source/*
 
 build/*
-source/user_guide/fig
-source/user_guide/media
 source/_build/
+source/quick_start/release.md  # this file is obtained from fsetoolsGUI upon make
