@@ -17,7 +17,7 @@ B101 is a work in progress and therefore supplied with limited access to alpha t
 
 3. First save the license file :code:`b101.fselic` to an accessible folder (e.g., Desktop or Downloads). Then move the file to the Root folder (path shown in Step 1).
 
-.. warning::
+.. note::
     Step 3 requires administrator access.
 
 Done. Press Ctrl+Shift+B to activate B101 toolbar and access all its features. Note: A license file only works for a
