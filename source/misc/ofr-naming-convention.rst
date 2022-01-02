@@ -1,6 +1,8 @@
 OFR Naming Convention
 =====================
 
+``Documentation herein is based on the original official OFR Naming Convention email by Simon Lay in 2018.``
+
 Why do we need a file naming convention?
 
     We are a big team and we have some major projects with teams of engineers leading parallel delivery, we need some consistency to manage this from a QA perspective [LINK].
