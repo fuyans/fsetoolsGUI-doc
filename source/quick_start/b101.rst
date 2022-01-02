@@ -20,7 +20,7 @@ B101 is a work in progress and therefore supplied with limited access to alpha t
 .. note::
     Step 3 requires administrator access.
 
-Done. Press Ctrl+Shift+B to activate B101 toolbar and access all its features. Note: A license file only works for a
+Done. Press Ctrl+Shift+Alt+B to activate B101 toolbar and access all its features. Note: A license file only works for a
 specific version on a specific machine, meaning that upgrading FSETools or running the software on a different machine will
 require a new license file.
 
