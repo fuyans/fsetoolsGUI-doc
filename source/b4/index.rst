@@ -3,6 +3,9 @@ B4
 
 External Fire Spread
 
+.. note::
+   Most of this section is currently work in progress.
+
 .. toctree::
     :maxdepth: 2
 

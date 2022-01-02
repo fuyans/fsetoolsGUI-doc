@@ -2,8 +2,6 @@
 FSETools Documentation
 ######################
 
-This guide is intended for users.
-
 .. include:: quick_start/index.rst
 
 .. toctree::

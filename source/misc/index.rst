@@ -1,7 +1,8 @@
-MISC.
-=====
+Miscellaneous
+=============
 
-Internal Fire Spread (Structure)
+.. note::
+   Most of this section is currently work in progress.
 
 .. toctree::
     :maxdepth: 2

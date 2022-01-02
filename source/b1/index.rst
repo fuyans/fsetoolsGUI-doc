@@ -3,6 +3,9 @@ B1
 
 Means of Escape
 
+.. note::
+   Most of this section is currently work in progress.
+
 .. toctree::
     :maxdepth: 2
 

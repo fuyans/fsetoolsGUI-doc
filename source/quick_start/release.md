@@ -13,6 +13,7 @@ For future development.
 - [ ] \[New\] `SafirStruct3DPostWidget` SAFIR Struct3d Post Processor Strain, converted from previous version.
 - [ ] \[New\] Redo and Undo.
 - [ ] \[New\] Monetization.
+- [ ] \[Optim.\] Adopt a local and customised `pyqtgraph` and improve export dialog window.
 - [ ] \[Optim.\] Switch to Qt6 (from Qt5).
 
 ### XX/01/2022 VERSION 0.1.1:
