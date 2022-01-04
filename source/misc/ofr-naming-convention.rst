@@ -1,7 +1,8 @@
 OFR Naming Convention
 =====================
 
-``Documentation herein is based on the original official OFR Naming Convention email by Simon Lay in 2018.``
+.. note::
+    Documentation herein is based on the original official OFR Naming Convention email by Simon Lay in 2018.
 
 Why do we need a file naming convention?
 

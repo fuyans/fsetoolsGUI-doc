@@ -5,7 +5,6 @@ PD 7974 Heat Detector Device Activation
     :width: 100%
     :alt: PD 7974-1, Clause 8.3.3, Page 16
 
-
 .. list-table::
     :widths: 15 15 15 55
     :header-rows: 1

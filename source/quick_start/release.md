@@ -13,10 +13,13 @@ For future development.
 - [ ] \[New\] `SafirStruct3DPostWidget` SAFIR Struct3d Post Processor Strain, converted from previous version.
 - [ ] \[New\] Redo and Undo.
 - [ ] \[New\] Monetization.
-- [ ] \[Optim.\] Adopt a local and customised `pyqtgraph` and improve export dialog window.
 - [ ] \[Optim.\] Switch to Qt6 (from Qt5).
 
-### XX/01/2022 VERSION 0.1.1:
+### XX/01/2022 VERSION 0.1.2:
+
+- [x] \[Optim.\] New custom plot module based on Qt.QtCharts replacing `pyqtgraph`.
+
+### 02/01/2022 VERSION 0.1.1:
 
 - [x] \[New\] Integrated B101 module for exit capacity calculation and visualisation.
 - [x] \[New\] NodeList B101 Node Table to enhance efficiency when assign/inspect B101 nodes and their values.
@@ -25,14 +28,22 @@ For future development.
     - [x] Update the item in the View/Scene upon changes made in the Table.
     - [x] Centre item in the View upon select in the Table.
     - [x] Remove items in the View/Scene also remove in the Table.
-- [x] \[New\] `PRAPostFireWidget` SFEPRAPY Post Processor Make Fires, converted from previous version.
+- [x] \[New\] `PRAPostFireWidget` migrated from previous version.
 - [x] \[Fix\] Fixed B101 nodes horizontal and vertical alignment issues due to double counting item geometry.
 
 ### 16/12/2021 VERSION 0.1:
 
 - [x] \[New\] Refreshed user interface.
 - [x] \[New\] Added save and load feature.
-- [x] \[New\] `StefanBoltzmannLawWidget` a simple Stefan-Boltzmann calculator.
+- [x] \[New\] `PRAPostFireWidget` migrated from previous version.
+- [x] \[New\] `BR187PerpendicularRoofWidget` migrated from previous version.
+- [x] \[New\] `StefanBoltzmannLawWidget`.
+- [x] \[New\] `ImageWidget`.
+- [x] \[New\] `FDSMeshMPIOptimWidget`.
+- [x] \[New\] `ExternalModuleWidget`.
+- [x] \[New\] `BR187SummaryWidget`.
+- [x] \[New\] `BR187PerpendicularWallWidget`.
+- [x] \[New\] `FSEKitchenHobWidget`.
 - [x] \[New\] macOS 🖥 support.
 
 ### 04/09/2021 VERSION: 0.0.9
@@ -57,7 +68,7 @@ This is an accumulated node since 0.0.4.
 - [x] \[Improve\] 0401, 0402, 0403 & 0404: Added critical heat flux input parameter.
 - [x] \[Improve\] Installer: Interface optimisation.
 
-### 14/02/2020 VERSION: 0.0.1.dev20200214
+### 14/02/2020 VERSION: 0.0.1
 
 - [x] 0101 ADB data sheet.
 - [x] 0102 BS 9999 data sheet.
@@ -71,11 +82,11 @@ This is an accumulated node since 0.0.4.
 - [x] 0601 OFR naming.
 - [x] 0602 PD 7974 flame height.
     - [x] Calculation checked.
-- [x] 0111 implemented display numerical results in table.
+- [x] 0111 implemented display numerical results in the table.
 - [x] 0111 implemented graphical output.
 - [x] Converted all independent modules into QMainWindow objects, i.e. to have a status bar.
 - [x] Installer for MS Windows.
-- [x] All output files set to readonly.
+- [x] All output files are set to read only.
 - [x] Shortcut for all module GUI windows press ESC to close.
 - [x] Implemented error handling.
 - [x] Implemented check GUI tip texts.
@@ -84,13 +95,13 @@ This is an accumulated node since 0.0.4.
 
 1. Update version number `fsetoolsGUI.project_info.__version__`.
 2. Build executable using pyinstaller (make sure unnecessary files are removed).
-3. Build nsis installer.
+3. Build NSIS installer.
 4. Install and test the program:
     1. The previous version uninstalls successfully.
     2. Test b101.fselic.
     3. Load `v_fsetoolsGUI\calc\all.fse` without issues.
     4. Load `v_fsetoolsGUI\b101\std.fse` and run Flow without issues.
     5. Save without issues.
-5. Get a public accessible url of the new executable and update version info in `.json` file.
+5. Update remote update file as necessary.
 6. Update doc as necessary.
 7. Commit and pull to master.
