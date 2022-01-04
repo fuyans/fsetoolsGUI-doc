@@ -27,7 +27,7 @@ extensions = [
     "recommonmark",
     "jupyter_sphinx",
     "nbsphinx",
-    "sphinx.ext.mathjax"
+    "sphinx.ext.mathjax",
 ]
 
 autosummary_generate = True
@@ -99,3 +99,4 @@ html_context = {
 }
 
 highlight_language = 'none'  # Switch off highlight when no language is defined
+numfig = True
