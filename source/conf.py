@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os
+import os, sys
 import datetime
 
 # Minimum version, enforced by sphinx
@@ -8,9 +8,9 @@ needs_sphinx = '3.2.0'
 # -- Project information -----------------------------------------------------
 
 project = 'FSETOOLS'
-author = 'Yan Fu'
+author = 'Ian Fu'
 copyright = f'2019-{datetime.datetime.now().strftime("%Y")}, {author}'
-version = '0.1.dev7'
+version = '0.1.1'
 # release = '1'
 language = 'en'
 
@@ -28,6 +28,7 @@ extensions = [
     "jupyter_sphinx",
     "nbsphinx",
     "sphinx.ext.mathjax",
+   'sphinx.ext.autosectionlabel',
 ]
 
 autosummary_generate = True
@@ -99,4 +100,7 @@ html_context = {
 }
 
 highlight_language = 'none'  # Switch off highlight when no language is defined
-numfig = True
+numfig = True  # Enable :numref:
+
+# Make sure the target is unique
+autosectionlabel_prefix_document = True  # need extension sphinx.ext.autosectionlabel

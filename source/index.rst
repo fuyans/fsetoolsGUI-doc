@@ -5,15 +5,23 @@ FSETools Documentation
 Introduction
 ============
 
-FSETools (also referred to as FSEToolsGUI) compiles several Fire Safety Engineering helper tools that are mostly based on
-contemporary guidance documents (e.g. ADB / BS 9999 / BS 7974). FSETools is designed to enhance the efficiency, accuracy
-and consistency of the fire engineering design process. Users are expected to have a thorough understanding of the
-methodologies behind these tools.
+FSETools compiles several Fire Safety Engineering tools. Mostly based on contemporary guidance documents (e.g. ADB /
+BS 9999 / BS 7974). Users are expected to have a thorough understanding of the methodologies behind these tools.
 
-.. figure:: /quick_start/conceptual.png
-    :alt: Conceptual sketch main component
+Main Window Layout
+------------------
 
-.. list-table:: Main UI Components
+A good figure worth thousands words.
+
+.. _fig-main-window-layout:
+
+.. figure:: /quick_start/main-window-layout.png
+
+    A sketch of the main window layout of FSETools
+
+.. _table-main-window-components:
+
+.. list-table:: Main UI components
     :widths: 10 90
     :header-rows: 1
 
@@ -24,42 +32,43 @@ methodologies behind these tools.
     * - Menu Bar
       - A horizontally oriented menu bar housing all options in form of dropdown menus.
     * - Side Menu
-      - A vertically oriented tree menu housing shortcut for summoning useful tools.
+      - A vertically oriented tree menu housing shortcut for activating useful tools (also see
+        :ref:`section-calculation-node-layout`).
     * - Viewport
-      - A viewport area allows the users to see calculation inputs and outputs etc. Can be toggled visible/hidden by View -> Side Menu.
+      - A viewport area allows the users to see calculation inputs and outputs etc. Can be toggled visible/hidden by
+        View -> Side Menu.
     * - Console
-      - A command-line style area to display various information, e.g. calculation errors/warnings etc. Can be toggled visible/hidden by View -> Console.
+      - A command-line style area to display various information, e.g. calculation errors/warnings etc. Can be toggled
+        visible/hidden by View -> Console.
     * - Status Bar
-      - The bottom bar of the main window. The last line in the Console will be displayed on this bar for 5 seconds. Version info, viewport location and zoom are displayed on the right end (click these text to reveal extra info/options).
+      - The bottom bar of the main window. The last line in the Console will be displayed on this bar for 5 seconds.
+        Version info, viewport location and zoom are displayed on the right end (click these text to reveal extra
+        info/options).
 
-.. figure:: /quick_start/demo/gen.gif
-    :alt: gen.gif
+.. _section-calculation-node-layout:
 
+Calculation Node Layout
+-----------------------
 
-Keyboard and Mouse Action and Effect
-====================================
+Most of the calculation modules hosted within the Side Menu (see :numref:`fig-main-window-layout`) share a common
+layout as per :numref:`fig-common-calculation-node-layout` for consistency.
 
-.. list-table:: Mouse Action
-    :widths: 30 70
-    :header-rows: 1
+.. _fig-common-calculation-node-layout:
+.. figure:: /quick_start/common-calc-node-layout.png
+    :width: 500px
 
-    * - Mouse
-      - Effect
-    * - Left button press
-      - To select a single item
-    * - Left button hold + move
-      - To select multiple items
-    * - Right button press
-      - To call context menu depending upon selection
-    * - Middle button hold + move
-      - Move viewport
+    A sketch of Calculation Node common layout
+
+Keyboard Shortcuts
+==================
 
 .. _table-keyboard-shortcuts:
+
 .. list-table:: Keyboard shortcuts
     :widths: 30 70
     :header-rows: 1
 
-    * - Keyboard
+    * - Shortcut
       - Effect
     * - Ctrl + A
       - Select all items
@@ -75,32 +84,95 @@ Keyboard and Mouse Action and Effect
       - Save current scene to a file
     * - Ctrl + Shift + S
       - To save current scene to a new file
-
     * - R
-      - ``B101`` To create a Room node
+      - To create a Room node. Requires :ref:`section-b101-license`.
     * - D
-      - ``B101`` To create a Door node
+      - To create a Door node. Requires :ref:`section-b101-license`.
     * - E
-      - ``B101`` To create an Exit node
+      - To create an Exit node. Requires :ref:`section-b101-license`.
     * - S
-      - ``B101`` To create a Stair node
+      - To create a Stair node. Requires :ref:`section-b101-license`.
     * - X
-      - ``B101`` To create a X node
+      - To create a X node. Requires :ref:`section-b101-license`.
     * - Ctrl + Shift + R
-      - ``B101`` To toggle b101 visualisation
+      - To toggle b101 visualisation. Requires :ref:`section-b101-license`.
     * - Ctrl + R
-      - ``B101`` To update b101 flow (also switch on visualisation)
+      - To update b101 flow (also switch on visualisation). Requires :ref:`section-b101-license`.
+
+Mouse Action and Effect
+=======================
+
+.. note::
+    Most items in :numref:`table-mouse-actions` works only when Viewport is focused. Click any blank area in Viewport
+    to gain focus.
+
+.. _table-mouse-actions:
+
+.. list-table:: Mouse actions
+    :widths: 30 70
+    :header-rows: 1
+
+    * - Action
+      - Effect
+    * - Left button press
+      - To select a single item
+    * - Left button hold + move
+      - To select multiple items
+    * - Right button press
+      - To call context menu depending upon selection
+    * - Middle button hold + move
+      - Move viewport
+
+.. _section-b101-license:
+
+B101 License
+============
+
+B101 is still a work in progress and therefore supplied with limited access to testers. Contact Ian if you are
+interested in testing B101 (a 30 minutes training is required for new starters). Upon agreement, follow the three
+simple steps below to obtain and install a B101 license file:
+
+1. Click Help -> About to get the specification data displayed in Console, formatted as per below.
+
+    ::
+
+        About FSETools:
+        FSETools 0.1.1 202112312253
+        Expires in 364 day(s), 2 hour(s) and 9 minute(s)
+        UID 00000000-0000-0000-0000-XXXXXXXXXXXX
+        Root C:\Program Files (x86)\FSETOOLSGUI
+
+2. Send this information (particularly version and UID) to Ian to request a licence file (named :code:`b101.fselic` and
+   do not change this file name).
+
+3. First save the license file :code:`b101.fselic` to an accessible folder (e.g., Desktop or Downloads). Then move the
+   file to the root folder (shown in Step 1).
+
+.. note::
+    Step 3 requires administrator access.
+
+Upon completion of the steps above, press Ctrl+Shift+Alt+B to show/activate B101 toolbar (press again to ]
+hide/deactivate). All B101 features will be accessible when the toolbar is visible (as well as the shortcuts in
+:numref:`table-keyboard-shortcuts`).
+
+.. note::
+    A license file only works for a specific version on a specific machine, meaning that upgrading FSETools or running
+    the software on a different machine will require a new license file.
+
+.. figure:: /quick_start/b101-toolbar.png
+    :alt: B101 toolbar
 
 
 Installation
 ============
 
-Download `FSETOOLSGUI` and double click the installer.
+Download and execute `FSETOOLSGUI` installer.
 
 .. figure:: /quick_start/install/installer-icon.png
     :alt: Setup: Installer
 
-You may see a pop-up dialog window asking to uninstall previous versions (if exist). Give it ten seconds after clicking the **Yes** button.
+You may see a pop-up dialog window asking to uninstall previous versions (if exist). After pressed the **Yes** button,
+wait 10 seconds before move onto the next step for the uninstallation to complete.
 
 .. figure:: /quick_start/install/installer-setup-uninstall-previous.png
     :alt: Setup: Uninstall previous version
@@ -121,41 +193,8 @@ The application should be able to run.
     :alt: Setup: FSETools
 
 
-B101 License
+Release Note
 ============
-
-B101 is a work in progress and therefore supplied with limited access to alpha testers. Contact Ian if you are interested in testing B101 (a 30 minutes training is required for new starters). Upon agreement, follow the three simple steps below to obtain and install a B101 license file:
-
-1. Click Help -> About to get specification data displayed in Console. Below shows an example.
-
-    ::
-
-        About FSETools:
-        FSETools 0.1.1 202112312253
-        Expires in 364 day(s), 2 hour(s) and 9 minute(s)
-        UID 00000000-0000-0000-0000-103d1ccd0662
-        Root C:\Program Files (x86)\FSETOOLSGUI
-
-2. Send this information (particularly version and UID) to Ian to request a licence file (named :code:`b101.fselic`).
-
-3. First save the license file :code:`b101.fselic` to an accessible folder (e.g., Desktop or Downloads). Then move the file to the root folder (path shown in Step 1).
-
-.. note::
-    Step 3 requires administrator access.
-
-Upon completion of the steps above, press Ctrl+Shift+Alt+B to activate B101 toolbar. B101 features will be
-accessible when the toolbar is visible (and the keyboard shortcuts in :numref:`table-keyboard-shortcuts`).
-
-.. note::
-    A license file only works for a specific version on a specific machine, meaning that upgrading FSETools or running
-    the software on a different machine will require a new license file.
-
-.. figure:: /quick_start/b101.png
-    :alt: B101 Example
-
-
-Release
-=======
 
 .. include:: /quick_start/release.md
     :literal:
