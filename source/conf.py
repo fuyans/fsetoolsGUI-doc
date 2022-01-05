@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os, sys
+import os
 import datetime
 
 # Minimum version, enforced by sphinx
@@ -24,11 +24,12 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "numpydoc",
-    "recommonmark",
+    # "recommonmark",
     "jupyter_sphinx",
     "nbsphinx",
     "sphinx.ext.mathjax",
-   'sphinx.ext.autosectionlabel',
+    'sphinx.ext.autosectionlabel',
+    'myst_parser'
 ]
 
 autosummary_generate = True
