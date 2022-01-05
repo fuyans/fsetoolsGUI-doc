@@ -54,6 +54,7 @@ Most of the calculation modules hosted within the Side Menu (see :numref:`fig-ma
 layout as per :numref:`fig-common-calculation-node-layout` for consistency.
 
 .. _fig-common-calculation-node-layout:
+
 .. figure:: /quick_start/common-calc-node-layout.png
     :width: 500px
 
