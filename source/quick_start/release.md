@@ -1,4 +1,4 @@
-# Release
+# Release Note
 
 This file documents the release history of `fsetoolsgui`.
 
@@ -8,21 +8,22 @@ This file documents the release history of `fsetoolsgui`.
 
 For future development.
 
-- [ ] \[New\] `EN1993ExtColWidget` BS EN 1993-1-2 external column temperature
-- [ ] \[New\] `EN1993ExtBeamWidget` BS EN 1993-1-2 external beam temperature
+- [ ] \[New\] `EN1993ExtColWidget` BS EN 1993-1-2 external column temperature.
+- [ ] \[New\] `EN1993ExtBeamWidget` BS EN 1993-1-2 external beam temperature.
 - [ ] \[New\] `SafirStruct3DPostWidget` SAFIR Struct3d Post Processor Strain, converted from previous version.
 - [ ] \[New\] Redo and Undo.
-- [ ] \[New\] Monetization.
 - [ ] \[Optim.\] Migrate to Qt6 (from Qt5).
+- [ ] \[Misc.\] Monetization.
 
 ### XX/01/2022 VERSION 0.1.2:
 
-- [x] \[Optim.\] New custom plot module based on Qt.QtCharts replacing `pyqtgraph`.
+- [x] \[Fix\]`DistSelectorWidget` fixed plot does not show up in *0.1.1*.
+- [x] \[Optim.\] New custom plot module based on `Qt.QtCharts` replacing `pyqtgraph`.
 
 ### 02/01/2022 VERSION 0.1.1:
 
 - [x] \[New\] Integrated B101 module for exit capacity calculation and visualisation.
-- [x] \[New\] NodeList B101 Node Table to enhance efficiency when assign/inspect B101 nodes and their values.
+- [x] \[New\] NodeList B101 Node Table to enhance efficiency editing/reviewing B101 nodes and their values.
     - [x] Dedicated `QDialog` UI.
     - [x] Update the item in the Table upon changes made in the View/Scene.
     - [x] Update the item in the View/Scene upon changes made in the Table.
@@ -44,7 +45,7 @@ For future development.
 - [x] \[New\] `BR187SummaryWidget`.
 - [x] \[New\] `BR187PerpendicularWallWidget`.
 - [x] \[New\] `FSEKitchenHobWidget`.
-- [x] \[New\] macOS 🖥 support.
+- [x] \[New\] macOS support.
 
 ### 04/09/2021 VERSION: 0.0.9
 

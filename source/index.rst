@@ -193,12 +193,11 @@ The application should be able to run.
     :alt: Setup: FSETools
 
 
-Release Note
-============
+Release
+=======
 
-.. include:: /quick_start/release.md
-    :literal:
-
+.. include:: ./quick_start/release.md
+    :parser: myst_parser.sphinx_
 
 .. toctree::
     :maxdepth: 2
