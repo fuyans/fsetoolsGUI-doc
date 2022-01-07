@@ -95,14 +95,13 @@ This is an accumulated node since 0.0.4.
 ## Checklist before release
 
 1. Update version number `fsetoolsGUI.project_info.__version__`.
-2. Build executable using pyinstaller (make sure unnecessary files are removed).
-3. Build NSIS installer.
-4. Install and test the program:
-    1. The previous version uninstalls successfully.
-    2. Test b101.fselic.
+2. Build executable (make sure unnecessary files are removed).
+3. Build installer. Install and test the program:
+    1. To check whether the previous version uninstalls successfully.
+    2. Test `b101.fselic`.
     3. Load `v_fsetoolsGUI\calc\all.fse` without issues.
     4. Load `v_fsetoolsGUI\b101\std.fse` and run Flow without issues.
     5. Save without issues.
-5. Update remote update file as necessary.
-6. Update doc as necessary.
-7. Commit and pull to master.
+4. Update remote update file as necessary.
+5. Update doc as necessary.
+6. Commit and pull to master.
