@@ -13,12 +13,12 @@ For future development. ☐ incomplete; ☑ completed.
 - ☐ **New** `SafirStruct3DPostWidget` SAFIR Struct3d Post Processor Strain, converted from previous version.
 - ☐ **New** Redo and Undo.
 - ☐ **Optim.** B101 Node Table to add import and export.
-- ☐ **Misc.** Monetization.
 
 ### 07/01/2022 VERSION 0.1.2
 
 - ☑ **New** Distribute horizontally and vertically.
 - ☑ **Fix** `DistSelectorWidget` fixed plot does not show up in *0.1.1*.
+- ☑ **Fix** `ImageNode` fixed crash when image scaled up more than 300 %.
 - ☑ **Optim.** Migrated to Qt6 (from Qt5).
 - ☑ **Optim.** New custom plot module based on `Qt.QtCharts` replacing `pyqtgraph`.
 
