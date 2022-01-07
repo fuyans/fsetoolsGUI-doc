@@ -129,6 +129,9 @@ Mouse Action and Effect
 B101 License
 ============
 
+.. note::
+    New in version 0.1.2
+
 B101 is still a work in progress and therefore supplied with limited access to testers. Contact Ian if you are
 interested in testing B101 (a 30 minutes training is required for new starters). Upon agreement, follow the three
 simple steps below to obtain and install a B101 license file:
@@ -147,10 +150,7 @@ simple steps below to obtain and install a B101 license file:
    do not change this file name).
 
 3. First save the license file :code:`b101.fselic` to an accessible folder (e.g., Desktop or Downloads). Then move the
-   file to the root folder (shown in Step 1).
-
-.. note::
-    Step 3 requires administrator access.
+   file to the root folder (shown in Step 1). This may require administrator access.
 
 Upon completion of the steps above, press Ctrl+Shift+Alt+B to show/activate B101 toolbar (press again to ]
 hide/deactivate). All B101 features will be accessible when the toolbar is visible (as well as the shortcuts in

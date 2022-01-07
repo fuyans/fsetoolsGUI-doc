@@ -4,7 +4,7 @@ This file documents the release history of `fsetoolsgui`.
 
 ## Version History
 
-### XX/XX/2022 VERSION X.X.X:
+### XX/XX/2022 VERSION X.X.X
 
 For future development. ☐ incomplete; ☑ completed.
 
@@ -15,14 +15,14 @@ For future development. ☐ incomplete; ☑ completed.
 - ☐ **Optim.** B101 Node Table to add import and export.
 - ☐ **Misc.** Monetization.
 
-### 07/01/2022 VERSION 0.1.2:
+### 07/01/2022 VERSION 0.1.2
 
 - ☑ **New** Distribute horizontally and vertically.
 - ☑ **Fix** `DistSelectorWidget` fixed plot does not show up in *0.1.1*.
 - ☑ **Optim.** Migrated to Qt6 (from Qt5).
 - ☑ **Optim.** New custom plot module based on `Qt.QtCharts` replacing `pyqtgraph`.
 
-### 02/01/2022 VERSION 0.1.1:
+### 02/01/2022 VERSION 0.1.1
 
 - ☑ **New** Integrated B101 module for exit capacity calculation and visualisation.
 - ☑ **New** NodeList B101 Node Table to enhance efficiency editing/reviewing B101 nodes and their values.
@@ -34,7 +34,7 @@ For future development. ☐ incomplete; ☑ completed.
 - ☑ **New** `PRAPostFireWidget` migrated from previous version.
 - ☑ **Fix** Fixed B101 nodes horizontal and vertical alignment issues due to double counting item geometry.
 
-### 16/12/2021 VERSION 0.1:
+### 16/12/2021 VERSION 0.1
 
 - ☑ **New** Refreshed user interface.
 - ☑ **New** Added save and load feature.
