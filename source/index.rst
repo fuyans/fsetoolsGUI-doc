@@ -11,7 +11,7 @@ BS 9999 / BS 7974). Users are expected to have a thorough understanding of the m
 Main Window Layout
 ------------------
 
-A good figure worth thousands words.
+A good picture worth thousands words.
 
 .. _fig-main-window-layout:
 

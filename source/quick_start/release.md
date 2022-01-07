@@ -6,19 +6,20 @@ This file documents the release history of `fsetoolsgui`.
 
 ### XX/XX/2022 VERSION X.X.X:
 
-For future development. Items to be done: ☐; items completed ☑.
+For future development. ☐ incomplete; ☑ completed.
 
 - ☐ **New** `EN1993ExtColWidget` BS EN 1993-1-2 external column temperature.
 - ☐ **New** `EN1993ExtBeamWidget` BS EN 1993-1-2 external beam temperature.
 - ☐ **New** `SafirStruct3DPostWidget` SAFIR Struct3d Post Processor Strain, converted from previous version.
 - ☐ **New** Redo and Undo.
-- ☐ **Optim.** Migrate to Qt6 (from Qt5).
+- ☐ **Optim.** B101 Node Table to add import and export.
 - ☐ **Misc.** Monetization.
 
 ### 07/01/2022 VERSION 0.1.2:
 
 - ☑ **New** Distribute horizontally and vertically.
-- ☑ **Fix**`DistSelectorWidget` fixed plot does not show up in *0.1.1*.
+- ☑ **Fix** `DistSelectorWidget` fixed plot does not show up in *0.1.1*.
+- ☑ **Optim.** Migrated to Qt6 (from Qt5).
 - ☑ **Optim.** New custom plot module based on `Qt.QtCharts` replacing `pyqtgraph`.
 
 ### 02/01/2022 VERSION 0.1.1:
