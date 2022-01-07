@@ -12,6 +12,7 @@ For future development. ☐ incomplete; ☑ completed.
 - ☐ **New** `EN1993ExtBeamWidget` BS EN 1993-1-2 external beam temperature.
 - ☐ **New** `SafirStruct3DPostWidget` SAFIR Struct3d Post Processor Strain, converted from previous version.
 - ☐ **New** Redo and Undo.
+- ☐ **Fix** Crash upon close, particularly when items are deleted.
 - ☐ **Optim.** B101 Node Table to add import and export.
 
 ### 07/01/2022 VERSION 0.1.2

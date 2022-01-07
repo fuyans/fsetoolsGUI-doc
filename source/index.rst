@@ -132,9 +132,9 @@ B101 License
 .. note::
     New in version 0.1.2
 
-B101 is still a work in progress and therefore supplied with limited access to testers. Contact Ian if you are
-interested in testing B101 (a 30 minutes training is required for new starters). Upon agreement, follow the three
-simple steps below to obtain and install a B101 license file:
+B101 is still a work in progress and therefore supplied with limited access. Contact Ian if you are interested in
+testing B101 (a 30 minutes training is required for new starters as lack of proper documentation). Upon agreement,
+follow the steps below to obtain and install a B101 license file:
 
 1. Click Help -> About to get the specification data displayed in Console, formatted as per below.
 
