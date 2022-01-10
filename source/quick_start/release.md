@@ -4,7 +4,7 @@ This file documents the release history of `fsetoolsgui`.
 
 ## Version History
 
-### XX/XX/2022 VERSION X.X.X:
+### XX/XX/2022 VERSION X.X.X
 
 For future development. ☐ incomplete; ☑ completed.
 
@@ -12,17 +12,18 @@ For future development. ☐ incomplete; ☑ completed.
 - ☐ **New** `EN1993ExtBeamWidget` BS EN 1993-1-2 external beam temperature.
 - ☐ **New** `SafirStruct3DPostWidget` SAFIR Struct3d Post Processor Strain, converted from previous version.
 - ☐ **New** Redo and Undo.
+- ☐ **Fix** Crash upon close, particularly when items are deleted.
 - ☐ **Optim.** B101 Node Table to add import and export.
-- ☐ **Misc.** Monetization.
 
-### 07/01/2022 VERSION 0.1.2:
+### 07/01/2022 VERSION 0.1.2
 
 - ☑ **New** Distribute horizontally and vertically.
 - ☑ **Fix** `DistSelectorWidget` fixed plot does not show up in *0.1.1*.
+- ☑ **Fix** `ImageNode` fixed crash when image scaled up more than 300 %.
 - ☑ **Optim.** Migrated to Qt6 (from Qt5).
 - ☑ **Optim.** New custom plot module based on `Qt.QtCharts` replacing `pyqtgraph`.
 
-### 02/01/2022 VERSION 0.1.1:
+### 02/01/2022 VERSION 0.1.1
 
 - ☑ **New** Integrated B101 module for exit capacity calculation and visualisation.
 - ☑ **New** NodeList B101 Node Table to enhance efficiency editing/reviewing B101 nodes and their values.
@@ -34,7 +35,7 @@ For future development. ☐ incomplete; ☑ completed.
 - ☑ **New** `PRAPostFireWidget` migrated from previous version.
 - ☑ **Fix** Fixed B101 nodes horizontal and vertical alignment issues due to double counting item geometry.
 
-### 16/12/2021 VERSION 0.1:
+### 16/12/2021 VERSION 0.1
 
 - ☑ **New** Refreshed user interface.
 - ☑ **New** Added save and load feature.
@@ -95,14 +96,13 @@ This is an accumulated node since 0.0.4.
 ## Checklist before release
 
 1. Update version number `fsetoolsGUI.project_info.__version__`.
-2. Build executable using pyinstaller (make sure unnecessary files are removed).
-3. Build NSIS installer.
-4. Install and test the program:
-    1. The previous version uninstalls successfully.
-    2. Test b101.fselic.
+2. Build executable (make sure unnecessary files are removed).
+3. Build installer. Install and test the program:
+    1. To check whether the previous version uninstalls successfully.
+    2. Test `b101.fselic`.
     3. Load `v_fsetoolsGUI\calc\all.fse` without issues.
     4. Load `v_fsetoolsGUI\b101\std.fse` and run Flow without issues.
     5. Save without issues.
-5. Update remote update file as necessary.
-6. Update doc as necessary.
-7. Commit and pull to master.
+4. Update remote update file as necessary.
+5. Update doc as necessary.
+6. Commit and pull to master.

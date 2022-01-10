@@ -167,7 +167,7 @@ hide/deactivate). All B101 features will be accessible when the toolbar is visib
 Installation
 ============
 
-Download and execute `FSETOOLSGUI` installer.
+Download and execute installer.
 
 .. figure:: /quick_start/install/installer-icon.png
     :alt: Setup: Installer
