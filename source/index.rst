@@ -194,6 +194,18 @@ The application should be able to run.
     :alt: Setup: FSETools
 
 
+Update
+======
+
+FSETools has builtin check update module. To check for updates, simply click the version text located at the bottom right corner of the main window as per :numref:`fig-check-update`.
+
+.. _fig-check-update:
+
+.. figure:: /quick_start/demo/version.gif
+    :alt: Check update
+
+    Check for Updates
+
 Release
 =======
 
