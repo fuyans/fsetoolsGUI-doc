@@ -2,18 +2,33 @@
 
 This file documents the release history of `fsetoolsgui`.
 
+## Known Issues
+
+- macOS. Warning message upon instantiation of `CalculationNode`:  
+  `qt.qpa.fonts: Populating font family aliases took 370 ms. Replace uses of missing font family "Menlo" with one that exists to avoid this cost. `
+- macOS. Warning messages when `QGraphicsView` gain/lose focus:  
+  `qt.pointer.dispatch: delivering touch release to same window QWindow(0x0) not QWidgetWindow(0x600000952f40, name="MainWindowClassWindow")`  
+  `qt.pointer.dispatch: skipping QEventPoint(id=1 ts=0 pos=0,0 scn=816.915,868.501 gbl=816.915,868.501 Released ellipse=(1x1 ∡ 0) vel=0,0 press=-816.915,-868.501 last=-816.915,-868.501 Δ 816.915,868.501) : no target window`  
+  See https://bugreports.qt.io/browse/QTBUG-95887 and https://bugreports.qt.io/browse/QTBUG-88192.
+
 ## Version History
 
 ### XX/XX/2022 VERSION X.X.X
 
 For future development. ☐ incomplete; ☑ completed.
 
-- ☐ **New** `EN1993ExtColWidget` BS EN 1993-1-2 external column temperature.
-- ☐ **New** `EN1993ExtBeamWidget` BS EN 1993-1-2 external beam temperature.
+- ☐ **New** `EN1993ExtColWidget` BS EN 1993-1-2 External Column temperature.
+- ☐ **New** `EN1993ExtBeamWidget` BS EN 1993-1-2 External Beam temperature.
 - ☐ **New** `SafirStruct3DPostWidget` SAFIR Struct3d Post Processor Strain, converted from previous version.
 - ☐ **New** Redo and Undo.
 - ☐ **Fix** Crash upon close, particularly when items are deleted.
+- ☐ **Optim.** `ProbDistWidget` export CSV with constant CDF interval.
 - ☐ **Optim.** B101 Node Table to add import and export.
+
+### XX/XX/2022 VERSION 0.1.3
+
+- ☑ **Fix** Fixed crash upon exit the application due to double `QGraphicsScene.removeItem` performed upon same item.
+- ☑ **Optim.** Import Images now use `ImageNode` instead of `ImageWidget`.
 
 ### 07/01/2022 VERSION 0.1.2
 
@@ -27,11 +42,6 @@ For future development. ☐ incomplete; ☑ completed.
 
 - ☑ **New** Integrated B101 module for exit capacity calculation and visualisation.
 - ☑ **New** NodeList B101 Node Table to enhance efficiency editing/reviewing B101 nodes and their values.
-    - ☑ Dedicated `QDialog` UI.
-    - ☑ Update the item in the Table upon changes made in the View/Scene.
-    - ☑ Update the item in the View/Scene upon changes made in the Table.
-    - ☑ Centre item in the View upon select in the Table.
-    - ☑ Remove items in the View/Scene also remove in the Table.
 - ☑ **New** `PRAPostFireWidget` migrated from previous version.
 - ☑ **Fix** Fixed B101 nodes horizontal and vertical alignment issues due to double counting item geometry.
 
@@ -52,10 +62,10 @@ For future development. ☐ incomplete; ☑ completed.
 
 ### 04/09/2021 VERSION: 0.0.9
 
-This is an accumulated node since 0.0.4.
+Cumulative since 0.0.4. Module ID is depreciated from 0.0.9 and onwards.
 
-- ☑ **New** FDS mesh mpi optimiser.
-- ☑ **New** Probability distribution.
+- ☑ **New** `ProbDistWidget` FDS mesh MPI optimiser.
+- ☑ **New** `ProbDistWidget` Probability distribution.
 - ☑ **New** `ISO834FireWidget` ISO 834 fire.
 - ☑ **New** `PRAPreWidget` SFEPRAPY pre-processor.
 - ☑ **New** `PRAProcWidget` SFEPRAPY processor.
@@ -63,6 +73,8 @@ This is an accumulated node since 0.0.4.
 - ☑ **Fix** `PD7974HDActWidget` PD 7974 heat detector device activation time, fixed incorrect image being displayed.
 
 ### 16/06/2020 VERSION: 0.0.4
+
+Cumulative since 0.0.1.
 
 - ☑ **New** 0103 BS 9999 merging flow at final exit level.
 - ☑ **New** 0104 ADB merging flow at final exit level.
@@ -84,8 +96,8 @@ This is an accumulated node since 0.0.4.
 - ☑ 0405 general thermal radiation analysis.
 - ☑ 0601 OFR naming.
 - ☑ 0602 PD 7974 flame height.
-- ☑ 0111 implemented display numerical results in the table.
-- ☑ 0111 implemented graphical output.
+- ☑ 0111 implemented display numerical results in a table.
+- ☑ 0111 implemented graphical (plot) output.
 - ☑ Converted all independent modules into QMainWindow objects, i.e. to have a status bar.
 - ☑ Installer for MS Windows.
 - ☑ All output files are set to read only.
