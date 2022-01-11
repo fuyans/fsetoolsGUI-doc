@@ -152,16 +152,20 @@ follow the steps below to obtain and install a B101 license file:
 3. First save the license file :code:`b101.fselic` to an accessible folder (e.g., Desktop or Downloads). Then move the
    file to the root folder (shown in Step 1). This may require administrator access.
 
-Upon completion of the steps above, press Ctrl+Shift+Alt+B to show/activate B101 toolbar (press again to ]
-hide/deactivate). All B101 features will be accessible when the toolbar is visible (as well as the shortcuts in
-:numref:`table-keyboard-shortcuts`).
+Upon completion of the steps above, click View -> B101 Toolbar (or press Ctrl+Shift+Alt+B) to show/activate B101
+Toolbar as shown in :numref:`fig-b101-activation` (press again to hide/deactivate). All B101 features will be accessible when the toolbar is visible (as well as
+the keyboard shortcuts in :numref:`table-keyboard-shortcuts`).
+
+.. _fig-b101-activation:
+
+.. figure:: /quick_start/b101-toolbar.png
+    :alt: B101 Toolbar
+
+    B101 Toolbar
 
 .. note::
     A license file only works for a specific version on a specific machine, meaning that upgrading FSETools or running
     the software on a different machine will require a new license file.
-
-.. figure:: /quick_start/b101-toolbar.png
-    :alt: B101 toolbar
 
 
 Installation
