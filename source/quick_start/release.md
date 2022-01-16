@@ -28,7 +28,9 @@ For future development. ☐ incomplete; ☑ completed.
 ### XX/XX/2022 VERSION 0.1.3
 
 - ☑ **Fix** Fixed crash upon exit the application due to double `QGraphicsScene.removeItem` performed upon same item.
-- ☑ **Optim.** Import Images now use `ImageNode` instead of `ImageWidget`.
+- ☑ **Fix** Removed B101 flow visualisation to `EdgeDragging`.
+- ☑ **Optim.** Import images now use `ImageNode` instead of `ImageWidget`.
+- ☑ **Optim.** Improved performance `FDSMeshMPIOptimWidget`.
 
 ### 07/01/2022 VERSION 0.1.2
 
