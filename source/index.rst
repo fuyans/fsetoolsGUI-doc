@@ -210,12 +210,6 @@ FSETools has builtin check update module. To check for updates, simply click the
 
     Check for Updates
 
-Release
-=======
-
-.. include:: ./quick_start/release.md
-    :parser: myst_parser.sphinx_
-
 .. toctree::
     :maxdepth: 2
     :hidden:
