@@ -5,7 +5,7 @@ FSETools Documentation
 Introduction
 ============
 
-FSETools compiles several Fire Safety Engineering tools. Mostly based on contemporary guidance documents (e.g. ADB /
+FSETools compiles several Fire Safety Engineering tools. Mostly of these tools are based on relevant contemporary guidance documents (e.g. ADB /
 BS 9999 / BS 7974). Users are expected to have a thorough understanding of the methodologies behind these tools.
 
 Main Window Layout
