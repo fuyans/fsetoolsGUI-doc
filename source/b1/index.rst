@@ -1,7 +1,8 @@
 B1
 ##
 
-Means of Escape
+Means of Warning and Escape
+===========================
 
 .. toctree::
     :maxdepth: 2

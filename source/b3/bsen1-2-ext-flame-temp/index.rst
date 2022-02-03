@@ -1,4 +1,4 @@
-Eurocode 1 Thermal actions for external members
+Eurocode 1 Thermal Actions for External Members
 ***********************************************
 
 .. figure:: B.1.png

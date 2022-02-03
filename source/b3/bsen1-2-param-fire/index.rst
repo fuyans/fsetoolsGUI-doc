@@ -1,4 +1,4 @@
-Eurocode 1 Parametric fire
+Eurocode 1 Parametric Fire
 **************************
 
 .. figure:: p30.png

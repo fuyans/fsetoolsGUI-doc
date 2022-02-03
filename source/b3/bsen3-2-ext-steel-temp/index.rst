@@ -1,4 +1,4 @@
-Eurocode 3 Heat transfer to external steelwork
+Eurocode 3 Heat Transfer to External Steelwork
 **********************************************
 
 .. figure:: B.1.png
