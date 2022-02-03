@@ -197,7 +197,7 @@ The application should be able to run.
 Update
 ======
 
-FSETools has builtin check update module. To check for updates, simply click the version text located at the bottom right corner of the main window as per :numref:`fig-check-update`.
+To check for updates, simply click the version text located at the bottom right corner of the main window as per :numref:`fig-check-update`.
 
 .. _fig-check-update:
 
