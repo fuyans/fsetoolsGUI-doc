@@ -1,8 +1,9 @@
 ISO 834 Standard Fire
 *********************
 
-The fire (time-temperature) curve used to define the furnace temperature in BS ISO 834-1 [1]_ tests. The ISO 834 series specifies a test method for determining the fire resistance of various elements of construction when subjected to the time dependent temperature conditions. Namely, this is effectively the thermal boundary condition imposed to the exposed surface of the test specimen (e.g., structural column, compartment slab etc.).
-The temperature is defined in Equation :eq:`standard-fire-curve` (Clause 6.1.1, ISO 834-1).
+The fire (time-temperature) curve used to define the furnace temperature in BS ISO 834-1 [1]_ tests. The ISO 834 series specifies a test method for determining the fire resistance of various elements of construction when subjected to the time dependent temperature conditions.
+
+The standard fire curve is defined in Equation :eq:`standard-fire-curve` (Clause 6.1.1, ISO 834-1).
 
 .. math::
     T=345\log_{10}\left(8t+1\right)+20
