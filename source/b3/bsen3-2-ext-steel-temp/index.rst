@@ -8,18 +8,6 @@ Eurocode 3 Heat Transfer to External Steelwork
 Column not engulfed in flame
 ============================
 
-.. list-table::
-    :header-rows: 1
-
-    * - Date
-      - Author
-      - Checker
-      - Remarks
-    * - 2020/12/01
-      - Ian F.
-      - Ian F.
-      - Initial
-
 .. figure:: B.2.png
     :width: 700%
     :alt: BS EN 1993-1-2 (2005), page 51 to 55

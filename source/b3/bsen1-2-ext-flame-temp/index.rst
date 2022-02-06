@@ -27,15 +27,16 @@ This method allows the determination of:
 
 
 Where
-    | :math:`W_1`    [:math:`m`], is the wall with greatest window opening area.
-    | :math:`W_2`    [:math:`m`], is the wall with lesser window opening area as compared to :math:`W_2`.
-    | :math:`A_{v1}` [:math:`m^2`], is the total window opening area on :math:`W_1`. :math:`A_{v1}=A_v` if window only exist on :math:`W_1`.
-    | :math:`A_{v}`  [:math:`m^2`], is the total window opening area on all walls.
-    | :math:`W_c`    [:math:`m`], is the width of core. Set to 0 if no core is present.
-    | :math:`L_c`    [:math:`m`], is the depth of core. Set to 0 if no core is present.
-    | :math:`w_t`    [:math:`m`], is the sum of window widths (:math:`w_t=\sum_{i=1}^{\text{tot. win.}}{w_i}`).
-    | :math:`h_{eq}` [:math:`m`], is weighted average height of windows.
-    | :math:`\mathrm{B}_w` [:math:`1`], :math:`\mathrm{B}_w=True` means there is wall above the window, otherwise :math:`\mathrm{B}_w=False`.
+    | :math:`W_1`           [:math:`m`], is the wall with greatest window opening area.
+    | :math:`W_2`           [:math:`m`], is the wall with lesser window opening area as compared to :math:`W_2`.
+    | :math:`A_{v1}`        [:math:`m^2`], is the total window opening area on :math:`W_1`. :math:`A_{v1}=A_v` if window only exist on :math:`W_1`.
+    | :math:`A_{v}`         [:math:`m^2`], is the total window opening area on all walls.
+    | :math:`W_c`           [:math:`m`], is the width of core. Set to 0 if no core is present.
+    | :math:`L_c`           [:math:`m`], is the depth of core. Set to 0 if no core is present.
+    | :math:`w_t`           [:math:`m`], is the sum of window widths (:math:`w_t=\sum_{i=1}^{\text{tot. win.}}{w_i}`).
+    | :math:`h_{eq}`        [:math:`m`], is weighted average height of all windows.
+    | :math:`S_w`           [:math:`m`], is the separation between windows.
+    | :math:`\mathrm{B}_w`  [:math:`1`], :math:`\mathrm{B}_w=True` means there is wall above the window, otherwise :math:`\mathrm{B}_w=False`.
 
 Opening factor
 --------------
@@ -330,66 +331,3 @@ Where
     | :math:`\phi_{z,i}` [:math:`1`], is the configuration factor of member face i for that **flame**.
 
 The configuration factors :math:`\phi_{z,i}` of individual member faces for radiative heat transfer from flames may be based on equivalent rectangular flame dimensions. The dimensions and locations of equivalent rectangles representing the front and sides of a flame for this purpose should be determined as given in annex G. For all other purposes, the flame dimensions given in B.4 of this annex should be used.
-
-BS EN 1991-1-2:2001 Excerpts
-============================
-
-.. figure:: B.1.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 33
-
-.. figure:: B.2_01.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 34
-
-.. figure:: B.2_02.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 35
-
-.. figure:: B.3.1.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 36
-
-.. figure:: B.3.2.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 37
-
-.. figure:: B.4.1_01.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 38
-
-.. figure:: B.4.1_02.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 39
-
-.. figure:: B.4.1_03.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 40
-
-.. figure:: B.4.2_01.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 40
-
-.. figure:: B.4.2_02.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 40
-
-.. figure:: B.5_01.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 40
-
-.. figure:: B.5_02.png
-    :width: 100%
-    :alt: BS EN 1991-1-2 (2002), page 40
-
-.. list-table::
-    :header-rows: 1
-
-    * - Date
-      - Author
-      - Checker
-      - Remarks
-    * - 2020/08/16
-      - Ian F.
-      - Ian F.
-      - Initial
