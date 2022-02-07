@@ -4,7 +4,7 @@ Eurocode 1 Thermal Actions for External Members
 Introduction
 ============
 
-This method allows the determination of:
+This method [1]_ allows the determination of:
 
 * the maximum temperatures of a compartment fire;
 * the size and temperatures of the flame from openings;
@@ -276,6 +276,8 @@ Where
 Miscellaneous
 =============
 
+Some parameters that are documented in [1]_ but they are more relevant to
+
 Flame emissivity
 ----------------
 
@@ -300,10 +302,10 @@ Where
     | :math:`\alpha_c` [:math:`1`], is the convective heat transfer coefficient of the flame.
 
 Overall Configuration Factors
-=============================
+-----------------------------
 
 Radiative heat transfer from an opening
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The overall configuration factor :math:`\phi_f`, of a member for radiative heat transfer from an opening should be determined from Equation :eq:`en1-b5-phi_f` (Clause B5(1), Equation B.28).
 
@@ -320,7 +322,7 @@ Where
 The configuration factor :math:`\phi_{f,i}`, for a member face from which the opening is not visible should be taken as zero.
 
 Radiative heat transfer from a flame
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The overall configuration factor :math:`\phi_z` of a member for radiative heat transfer from a flame should be determined from Equation :eq:`en1-b5-phi_z` (Clause B5(3), Equation B.29).
 
@@ -331,3 +333,8 @@ Where
     | :math:`\phi_{z,i}` [:math:`1`], is the configuration factor of member face i for that **flame**.
 
 The configuration factors :math:`\phi_{z,i}` of individual member faces for radiative heat transfer from flames may be based on equivalent rectangular flame dimensions. The dimensions and locations of equivalent rectangles representing the front and sides of a flame for this purpose should be determined as given in annex G. For all other purposes, the flame dimensions given in B.4 of this annex should be used.
+
+Reference
+=========
+
+.. [1]  BSI, *BS ISO 834-1:1999 Fire resistance tests. Elements of building construction. General requirements.*, BSI, London, Sep. 1991.

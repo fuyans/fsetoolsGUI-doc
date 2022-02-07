@@ -8,7 +8,7 @@ Internal Fire Spread Structure
     :maxdepth: 2
 
     bsen1-2-param-fire/index.rst
-    bsen1-2-ext-flame-temp/index.rst
+    bsen1-2-ext-flame/index.rst
     bsen3-unprotected-steel-heat-transfer/index.rst
     bsen3-protected-steel-heat-transfer/index.rst
     bsen3-2-ext-steel-temp/index.rst

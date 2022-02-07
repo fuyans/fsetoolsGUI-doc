@@ -22,6 +22,7 @@ For future development. ☐ incomplete; ☑ completed.
 - ☐ **New** `SafirStruct3DPostWidget` SAFIR Struct3d Post Processor Strain, converted from previous version.
 - ☐ **New** Redo and Undo.
 - ☐ **Fix** Crash upon close, particularly when items are deleted.
+- ☐ **Fix** Tabel column header text partially displayed.
 - ☐ **Optim.** `ProbDistWidget` export CSV with constant CDF interval.
 - ☐ **Optim.** B101 Node Table to add import and export.
 
@@ -29,8 +30,11 @@ For future development. ☐ incomplete; ☑ completed.
 
 - ☑ **Fix** Fixed crash upon exit the application due to double `QGraphicsScene.removeItem` performed upon same item.
 - ☑ **Fix** Removed B101 flow visualisation to `EdgeDragging`.
+- ☑ **Fix** `ImageNode` large png does not show up (when over approx. 4000x4000 pixels).
+- ☑ **Fix** `FDSMeshMPIOptimWidget` fixed an error when len(mpi) == weights.
 - ☑ **Optim.** Import images now use `ImageNode` instead of `ImageWidget`.
-- ☑ **Optim.** Improved performance `FDSMeshMPIOptimWidget`.
+- ☑ **Optim.** `FDSMeshMPIOptimWidget` improved performance by 30%.
+- ☑ **Optim.** `FDSMeshMPIOptimWidget` now takes and output fds file, directly.
 
 ### 07/01/2022 VERSION 0.1.2
 
