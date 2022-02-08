@@ -20,7 +20,7 @@ This method [1]_ allows the determination of:
 
 .. _fig-fire_compartment:
 
-.. figure:: fig-fire_compartment.png
+.. figure:: fig-fire-compartment.png
     :alt: Fire Compartment Figure
 
     Illustration of a fire compartment with vertical window opening and optional core

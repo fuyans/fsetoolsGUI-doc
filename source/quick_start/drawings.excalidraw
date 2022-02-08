@@ -1251,8 +1251,8 @@
     },
     {
       "type": "image",
-      "version": 43,
-      "versionNonce": 2130436368,
+      "version": 46,
+      "versionNonce": 253473405,
       "isDeleted": false,
       "id": "mk_Tnq7FKDI0wnMMLG5AN",
       "fillStyle": "hachure",
@@ -1271,7 +1271,7 @@
       "groupIds": [],
       "strokeSharpness": "round",
       "boundElements": [],
-      "updated": 1641355327062,
+      "updated": 1644280200820,
       "status": "saved",
       "fileId": "673494a81205eeed01bfcd9213c3fdf8a34e7f7e",
       "scale": [
