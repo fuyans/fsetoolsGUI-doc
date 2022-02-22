@@ -7,8 +7,8 @@ needs_sphinx = '3.2.0'
 
 # -- Project information -----------------------------------------------------
 
-project = 'FSETOOLS'
-author = 'Ian Fu'
+project = 'FSEToolsGUI'
+author = 'Yan Fu, OFR Consultants Ltd'
 copyright = f'2019-{datetime.datetime.now().strftime("%Y")}, {author}'
 version = '0.1.1'
 # release = '1'
