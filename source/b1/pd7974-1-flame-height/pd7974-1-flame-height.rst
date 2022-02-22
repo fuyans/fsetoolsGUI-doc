@@ -16,15 +16,3 @@ PD 7974 Flame Height
 .. figure:: 8.3.2.3.jpg
     :width: 100%
     :alt: PD 7974-1, Page 16
-
-.. list-table::
-    :header-rows: 1
-
-    * - Date
-      - Author
-      - Checker
-      - Remarks
-    * - 2020/03/30
-      - Ian F.
-      - Ian F.
-      - Initial

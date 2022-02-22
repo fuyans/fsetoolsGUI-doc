@@ -20,15 +20,3 @@ BS 9999 Merging flow
 .. figure:: 15.6.6_fig6.2.png
     :width: 100%
     :alt: BS 9999 (2017), page 70
-
-.. list-table::
-    :header-rows: 1
-
-    * - Date
-      - Author
-      - Checker
-      - Remarks
-    * - 2020/03/11
-      - Ian F.
-      - Alex T.
-      - Initial

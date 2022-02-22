@@ -99,20 +99,3 @@ Use the logbook located under miscellaneous to troubleshoot the production of th
 
 Following successful completion, the input files will be in the folder ready to run SFEPRAPY. 
 Note: It is important to check that the total areas of each compartment type and the building align with expectations and that compartment sizes have not been affected by any scale issues. 
-
-
-.. list-table:: Quality Assurance
-    :header-rows: 1
-
-    * - Date
-      - Author
-      - Checker
-      - Remarks
-    * - 2020/12/01
-      - Ian F.
-      - Ian F.
-      - Initial
-    * - 2021/11/15
-      - Ieuan R., Zak A.
-      - Ian F.
-      - Update user guide
