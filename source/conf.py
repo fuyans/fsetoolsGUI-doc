@@ -93,7 +93,7 @@ html_theme_options = {
 }
 
 html_context = {
-    # "github_url": "https://github.com", # or your GitHub Enterprise interprise
+    # "github_url": "https://github.com",
     "github_user": "fuyans",
     "github_repo": "fsetoolsGUI-doc",
     "github_version": "dev",
