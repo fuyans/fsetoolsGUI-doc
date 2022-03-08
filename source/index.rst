@@ -5,8 +5,10 @@ FSETools Documentation
 Introduction
 ============
 
-FSETools compiles several Fire Safety Engineering tools. Mostly of these tools are based on relevant contemporary guidance documents (e.g. ADB /
-BS 9999 / BS 7974). Users are expected to have a thorough understanding of the methodologies behind these tools.
+FSEToolsGUI is a graphical user interface application designed for carrying out calculations/assessments that are
+commonly used in Fire Safety Engineering. Most of the tools are based on contemporary guidance documents
+(e.g. ADB, BS 9999, BS 7974 etc). Users are expected to have a thorough understanding of the methodologies behind these
+tools.
 
 Main Window Layout
 ------------------
@@ -56,7 +58,6 @@ layout as per :numref:`fig-common-calculation-node-layout` for consistency.
 .. _fig-common-calculation-node-layout:
 
 .. figure:: /quick_start/common-calc-node-layout.png
-    :width: 500px
 
     A sketch of Calculation Node common layout
 
@@ -162,7 +163,7 @@ Upon completion of the steps above, click View -> B101 Toolbar (or press Ctrl+Sh
     B101 Toolbar
 
 .. note::
-    A license file only works for a specific version on a specific machine, meaning that upgrading FSETools or running the software on a different machine will require a new license file.
+    A license file is version and machine dependent, meaning that upgrading FSETools to a different version or running the software on a different machine will require a new license file.
 
 
 Installation
