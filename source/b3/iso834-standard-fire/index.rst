@@ -24,7 +24,4 @@ where
 
     Standard time/temperature curve (1 is the standard time-temperature curve, source: Figure 7, ISO 834-1)
 
-Reference
-=========
-
 .. [1]  BSI, *BS ISO 834-1:1999 Fire resistance tests. Elements of building construction. General requirements.*, BSI, London, Sep. 1991.
