@@ -130,8 +130,7 @@ Mouse Action and Effect
 B101 License
 ============
 
-.. note::
-    New in version 0.1.2
+.. versionadded:: 0.1.2
 
 B101 is still a work in progress and therefore supplied with limited access. Contact Ian if you are interested in
 testing B101 (a 30 minutes training is required for new starters as lack of proper documentation). Follow the steps 
