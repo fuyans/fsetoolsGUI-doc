@@ -300,37 +300,37 @@ Properties
     :type: float
     :noindex:
 
-    See :py:data:`beam_position_horizontal` in inputs.
+    See :py:data:`beam_position_horizontal`.
 
 .. py:data:: fire_combustion_efficiency
     :type: float
 
-    See :py:data:`fire_combustion_efficiency` in inputs.
+    See :py:data:`fire_combustion_efficiency`.
 
 .. py:data:: fire_hrr_density
     :type: float
     :noindex:
 
-    See :py:data:`fire_hrr_density` in inputs.
+    See :py:data:`fire_hrr_density`.
 
 .. py:data:: fire_nft_limit
     :type: float
     :noindex:
 
-    See :py:data:`fire_nft_limit` in inputs.
+    See :py:data:`fire_nft_limit`.
 
 .. py:data:: fire_spread_speed
     :type: float
     :noindex:
 
-    See :py:data:`fire_spread_speed` in inputs.
+    See :py:data:`fire_spread_speed`.
 
 
 .. py:data:: window_open_fraction
     :type: float
     :noindex:
 
-    See :py:data:`window_open_fraction` in inputs.
+    See :py:data:`window_open_fraction`.
 
 .. py:data:: fire_load_density
     :type: float
@@ -341,11 +341,22 @@ Properties
 .. py:data:: fire_type
     :type: float
 
-    Indicate the type of design fire selected for the iteration.
+    The type of design fire being selected for the iteration. See :py:data:`fire_mode`.
 
     | 0: Parametric fire
     | 1: Travelling fire
     | 2: Parametric fire (DIN)
+
+.. py:data:: extinction
+    :type: float
+
+    .. versionadded:: 0.1.3
+
+    [:math:`s`] Fire extinction time.
+
+    | For :py:data:`fire_type` 0 the extinction time is currently not determined.
+    | For :py:data:`fire_type` 1 the extinction time is determined at the back face of the travelling fire reaching the end of the room.
+    | For :py:data:`fire_type` 2 the extinction time is determined as the variable :math:`t_{3,x}` in J. Zehfuss and D. Hosser [1]_.
 
 .. py:data:: solver_steel_temperature_solved
     :type: float
@@ -371,3 +382,6 @@ Properties
     :type: float
 
     The solved time equivalence value. This
+
+
+.. [1]  J. Zehfuss and D. Hosser, ‘A parametric natural fire model for the structural fire design of multi-storey buildings’, Fire Safety Journal, vol. 42, no. 2, pp. 115–126, Mar. 2007, doi: 10.1016/j.firesaf.2006.08.004.
