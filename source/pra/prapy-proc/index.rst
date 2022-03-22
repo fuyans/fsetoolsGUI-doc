@@ -5,7 +5,7 @@ Processor
 Input File
 ==========
 
-An input file can be in either CSV or *.xlsx format. Below shows how an input file looks like.
+A input file should be a spreadsheet file in CSV or *.xlsx format. Below shows an example.
 
 .. math::
 
