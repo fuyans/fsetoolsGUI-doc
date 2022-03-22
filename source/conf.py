@@ -65,11 +65,11 @@ html_favicon = os.path.join('_static', 'logo_1_32x32.ico')
 html_theme_options = {
     "logo_link": "index",
     "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/fuyans/fsetoolsGUI-doc",
-            "icon": "fab fa-github-square",
-        },
+        # {
+        #     "name": "GitHub",
+        #     "url": "https://github.com/fuyans/fsetoolsGUI-doc",
+        #     "icon": "fab fa-github-square",
+        # },
     ],
     "favicons": [
         {
@@ -86,9 +86,12 @@ html_theme_options = {
     "collapse_navigation": True,
     "navigation_depth": 2,
     "show_prev_next": False,
-    "use_edit_page_button": True,
-    "navbar_end": ["navbar-icon-links.html", "search-field.html"],
-    "search_bar_text": "Search documentation ...",
+    "use_edit_page_button": False,
+    "navbar_end": [
+        "navbar-icon-links.html",
+        # "search-field.html"
+    ],
+    "search_bar_text": "Search...",
     "show_toc_level": 1,
 }
 
