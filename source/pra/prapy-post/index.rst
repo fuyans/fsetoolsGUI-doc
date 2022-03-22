@@ -1,6 +1,6 @@
-***********************
-SFEPRAPY Post Processor
-***********************
+**************
+Post Processor
+**************
 
 .. warning::
    Work in progress.
