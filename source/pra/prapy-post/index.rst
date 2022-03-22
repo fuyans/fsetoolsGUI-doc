@@ -1,5 +1,6 @@
-SFEPRAPY Post Processor
-***********************
+**************
+Post Processor
+**************
 
 ::
 
