@@ -5,7 +5,7 @@ Processor
 Input File
 ==========
 
-A input file should be a spreadsheet file in CSV or *.xlsx format. Below shows an example.
+An input file can be in either CSV or *.xlsx format. Below shows how an input file looks like.
 
 .. math::
 
@@ -22,21 +22,28 @@ A input file should be a spreadsheet file in CSV or *.xlsx format. Below shows a
     ...                             & ...                   & ...                   & ...
     \end{matrix}
 
+The first column are the required input parameters by the time equivalence Monte Carlo simulation routine.
+The other columns are input parameters of specific simulation cases. There is no limits on the number of simulation
+cases.
+
+Input parameters, their description, data type and dimensions are documented below.
+
 .. py:data:: case_name
     :type: str
 
-    An unique name for the case/compartment. Should be unique. This may be used in post-processing when combining time equivalence results.
+    An unique name for the case/compartment. Should be unique. This may be used in post-processing when combining time
+    equivalence results.
 
 .. py:data:: fire_mode
     :type: int
 
     Should be an integer from 0 to 4, inclusive. To define what design fires to use:
 
-    | 0 - EC parametric fire only (BS EN 1991-1-2 Parametric Fire).
-    | 1 - Travelling fire only.
-    | 2 - EC parametric fire, German Annex (BS DIN 1991-1-2 Parametric Fire).
-    | 3 - Option 0 and 1 as above.
-    | 4 - Option 2 and 1 as above.
+    | 0 - Only to use Eurocode parametric fire [1]_.
+    | 1 - Only to use travelling fire only.
+    | 2 - Only to use Eurocode parametric fire, German Annex [2]_.
+    | 3 - Use `0` and `1` as above based on certain conditions.
+    | 4 - Use `2` and `1` as above based on certain conditions.
 
 .. py:data:: n_simulations
     :type: int
@@ -62,7 +69,8 @@ A input file should be a spreadsheet file in CSV or *.xlsx format. Below shows a
 .. py:data:: room_wall_thermal_inertia
     :type: float
     
-    [:math:`J/m²K√s`] Compartment lining thermal inertia. Thermal inertia is the tendency of a material to resist changes in temperature, i.e. to differentiate between thermal conductivity and heat capacity.
+    [:math:`J/m²K√s`] Compartment lining thermal inertia. Thermal inertia is the tendency of a material to resist
+    changes in temperature, i.e. to differentiate between thermal conductivity and heat capacity.
 
 .. py:data:: window_width
     :type: float
@@ -77,7 +85,8 @@ A input file should be a spreadsheet file in CSV or *.xlsx format. Below shows a
 .. py:data:: beam_position_vertical
     :type: float
 
-    [:math:`m`] Height of test structure element within the compartment for TFM. This can be altered to assess the influence of height in tall compartments. Need to assess worst case height for columns.
+    [:math:`m`] Height of test structure element within the compartment for TFM. This can be altered to assess the
+    influence of height in tall compartments. Need to assess worst case height for columns.
 
 .. py:data:: beam_position_horizontal
     :type: float
@@ -98,31 +107,38 @@ A input file should be a spreadsheet file in CSV or *.xlsx format. Below shows a
 
 .. py:data:: fire_tlim
     :type: float
-    
-    [:math:`hour`] Time for maximum gas temperature in case of fuel-controlled fire, value options can be found in Annex A EN 1991-1-2 and the slow, medium and fast can be decided using BS 9999/BS 9991.
-    Slow: 25/60
-    Medium: 20/60
-    Fast: 15/60
+
+    [:math:`hour`] Time for maximum gas temperature in case of fuel-controlled fire, value options can be found in
+    Annex A EN 1991-1-2 [1]_:
+
+    | Slow: 25/60
+    | Medium: 20/60
+    | Fast: 15/60
 
 .. py:data: `fire_time_step`
     :type: float
 
-    [:math:`s`] Time step used for the model, all fire time-temperature curves and heat transfer calculation. This is recommended to be less than 30 s.
+    [:math:`s`] Time step used for the model, all fire time-temperature curves and heat transfer calculation. This is
+    recommended to be less than 30 s.
 
 .. py:data:: fire_time_duration
     :type: float
 
-    [:math:`s`] End of simulation. This should be set so that output data is produced allowing the target reliability to be determined. Normally set it to 4 hours and longer period of time for greater room length in order for travelling fire to propagate the entire room.
+    [:math:`s`] End of simulation. This should be set so that output data is produced allowing the target reliability
+    to be determined. Normally set it to 4 hours and longer period of time for greater room length in order for
+    travelling fire to propagate the entire room.
 
 .. py:data:: fire_load_density
     :type: float
 
-    [:math:`MJ/m²`] Fire load density. This should be selected based on occupancy characteristics. See literature for typical values for different occupancies (e.g. PD 6688-1 / BS EN 1991-1-2).
+    [:math:`MJ/m²`] Fire load density. This should be selected based on occupancy characteristics. See literature for
+    typical values for different occupancies [1]_ [3]_.
 
 .. py:data:: fire_hrr_density
     :type: float
 
-    [:math:`MW/m²`] Heat release rate. This should be selected based on the fuel. See literature for typical values for different occupancies (e.g. PD 6688-1 / BS EN 1991-1-2).
+    [:math:`MW/m²`] Heat release rate. This should be selected based on the fuel. See literature for typical values for
+    different occupancies [1]_ [3]_.
 
 .. py:data:: fire_spread_speed
     :type: float
@@ -138,7 +154,7 @@ A input file should be a spreadsheet file in CSV or *.xlsx format. Below shows a
     :type: float
 
     [:math:`1`].
-    Combustion efficiency (0.8 as per BS EN 1991-1-2 or 1.0 as per PD 6688-1).
+    Combustion efficiency (0.8 to 1.0 [1]_ [3]_).
 
 .. py:data:: fire_gamma_fi_q
     :type: float
@@ -194,40 +210,46 @@ A input file should be a spreadsheet file in CSV or *.xlsx format. Below shows a
 .. py:data:: solver_temperature_goal
     :type: float
 
-    [:math:`K`] The temperature to be solved for. This is critical temperature of the beam structural element, i.e. 550 or 620 °C.
+    [:math:`K`] The temperature to be solved for. This is critical temperature of the beam structural element, i.e. 550
+    or 620 °C.
 
 .. py:data:: solver_max_iter
     :type: float
 
     [:math:`1`].
-    The maximum iteration for the solver to find convergence. Suggest 20 as most (if not all) cases converge in less than 20 iterations.
+    The maximum iteration for the solver to find convergence. Suggest 20 as most (if not all) cases converge in less
+    than 20 iterations.
 
 .. py:data:: solver_thickness_lbound
     :type: float
 
-    [:math:`m`] The smallest value that the protection thickness can be. This is used to solve the maximum steel temperature at `solver_temperature_goal`.
+    [:math:`m`] The smallest value that the protection thickness can be. This is used to solve the maximum steel
+    temperature at :py:data:`solver_temperature_goal`.
 
 .. py:data:: solver_thickness_ubound
     :type: float
 
-    [:math:`m`] The greatest value that the protection thickness can be. This is used to solve the maximum steel temperature at `solver_temperature_goal`.
+    [:math:`m`] The greatest value that the protection thickness can be. This is used to solve the maximum steel
+    temperature at :py:data:`solver_temperature_goal`.
 
 .. py:data:: solver_tol
     :type: float
 
-    [:math:`K`] Tolerance of the temperature (in Kelvin) to be solved for. Set to 1 means convergence will be satisfied when the solved value is greater than `solver_temperature_goal-1` and less than `solver_temperature_goal+1`.
+    [:math:`K`] Tolerance of the temperature (in Kelvin) to be solved for. Set to 1 means convergence will be sought
+    when the solved steel temperature is within :py:data:`solver_temperature_goal` :math:`\pm 1`.
 
 .. py:data:: phi_teq
     :type: float
 
     [:math:`1`].
-    Model uncertainty factor multiplied with the evaluated characteristic time equivalence value to get the design time equivalence value.
+    Model uncertainty factor multiplied with the evaluated characteristic time equivalence value to get the design time
+    equivalence value.
 
 .. py:data:: timber_exposed_area
     :type: float
 
     [:math:`m²`] Exposed timber surface within the compartment, includes CLT slab, glulam columns and glulam beams.
-    Set `timber_exposed_area` to '0' to omitt timber involvement.
+    Set :py:data:`timber_exposed_area` to :math:`0` to omit timber involvement.
 
 .. py:data:: timber_charring_rate
     :type: float
@@ -248,18 +270,22 @@ A input file should be a spreadsheet file in CSV or *.xlsx format. Below shows a
     :type: float
 
     [:math:`1`].
-    The maximum number of iterations that the solver can run. `timber_solver_iter` in the output file should be inspected to determine appropriate value for `timber_solver_ilim`. Consider to increase `timber_solver_ilim` (or increase `timber_solver_tol`) if many solved values have `timber_solver_iter` == `timber_solver_ilim`.
+    The maximum number of iterations that the solver can run. :py:data:`timber_solver_iter` in the output file should
+    be inspected to determine appropriate value for `timber_solver_ilim`. Consider to increase
+    :py:data:`timber_solver_ilim` (or increase :py:data:`timber_solver_tol`) if many solved values have
+    :py:data:`timber_solver_iter` == `timber_solver_ilim`.
 
 .. py:data:: timber_solver_tol
     :type: float
 
-    [:math:`s`] Tolerance of the solver. Convergence is sought if change in time equivalence is less than `timber_solver_tol`.
+    [:math:`s`] Tolerance of the solver. Convergence is sought if change in time equivalence is less than
+    :py:data:`timber_solver_tol`.
 
 
 Output Files
 ============
 
-All MCS results are saved in :literal:`.\\mcs.out`, where :literal:`.\\` is the directory containing the input file.
+MCS results are saved in :literal:`.\\mcs.out`, where :literal:`.\\` is the directory containing the input file.
 Below shows an example directory tree including input and output files:
 
 ::
@@ -272,23 +298,23 @@ Below shows an example directory tree including input and output files:
         ├── case_c.csv
         ...
 
-Where :literal:`.\\mcs.out\\case_name.csv` contain results of each simulation case (as per :py:data:`case_name`).
-Below is an example of an output file.
+Where :literal:`.\\mcs.out\\case_name.csv` contain results of each simulation case (as per :py:data:`case_name`) and
+this output file is produced upon completion of the simulation case. Below shows how an output file looks like.
 
 .. math::
 
     \begin{matrix}
-    \text{index} & \text{beam_position_horizontal} & \text{fire_combustion_efficiency} & ... \\
-    318 & 27.35 & 0.96 & ... \\
-    1065 & 25.04 & 0.83 & ... \\
-    1244 & 20.22 & 0.92 & ... \\
-    814 & 19.62 & 0.94 & ... \\
-    1276 & 18.75 & 0.82 & ... \\
-    ... & ... & ... & ...
+    \text{index}    & \text{beam_position_horizontal}   & \text{fire_combustion_efficiency}     & ... \\
+    318             & 27.35                             & 0.96                                  & ... \\
+    1065            & 25.04                             & 0.83                                  & ... \\
+    1244            & 20.22                             & 0.92                                  & ... \\
+    814             & 19.62                             & 0.94                                  & ... \\
+    1276            & 18.75                             & 0.82                                  & ... \\
+    ...             & ...                               & ...                                   & ...
     \end{matrix}
 
-Properties
-----------
+Following above, each row (except the first row) records the sampled stochastic inputs and simulation outputs for the
+iteration
 
 .. py:data:: index
     :type: int
@@ -356,7 +382,7 @@ Properties
 
     | For :py:data:`fire_type` 0 the extinction time is currently not determined.
     | For :py:data:`fire_type` 1 the extinction time is determined at the back face of the travelling fire reaching the end of the room.
-    | For :py:data:`fire_type` 2 the extinction time is determined as the variable :math:`t_{3,x}` in J. Zehfuss and D. Hosser [1]_.
+    | For :py:data:`fire_type` 2 the extinction time is determined as the variable :math:`t_{3,x}` in J. Zehfuss and D. Hosser [4]_.
 
 .. py:data:: solver_steel_temperature_solved
     :type: float
@@ -381,7 +407,12 @@ Properties
 .. py:data:: solver_time_equivalence_solved
     :type: float
 
-    The solved time equivalence value. This
+    The solved time equivalence value.
 
+Reference
+=========
 
-.. [1]  J. Zehfuss and D. Hosser, ‘A parametric natural fire model for the structural fire design of multi-storey buildings’, Fire Safety Journal, vol. 42, no. 2, pp. 115–126, Mar. 2007, doi: 10.1016/j.firesaf.2006.08.004.
+.. [1]  BSI, *BS EN 1991-1-2:2002 Eurocode 1. Actions on structures. General actions. Actions on structures exposed to fire*, British Standards Institution, London, 2002.
+.. [2]  DIN, *Eurocode 1: Actions on structures - Part 1-2: General actions - Actions on structures exposed to fire; German version EN 1991-1-2:2002 + AC:2009*. DIN Deutsches Institut für Normung e. V., Sep. 2015.
+.. [3]  BSI, *PD 6688-1-2:2007 Background paper to the UK National Annex to BS EN 1991-1-2*, BSI, London, 2007.
+.. [4]  J\. Zehfuss and D\. Hosser, *A parametric natural fire model for the structural fire design of multi-storey buildings*, Fire Safety Journal, vol. 42, no. 2, pp. 115–126, Mar. 2007.
