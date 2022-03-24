@@ -18,65 +18,74 @@ Where
 
 The process involves the following key steps:
 
-#. Prepare Bluebeam markups.
-#. Export the Bluebeam markups to a file, usually named `m.csv`.
-#. Prepare a database file, usually named `d.xlsx`.
-#. Produce a SFEPRAPY input file by using FSETools.
+#. :ref:`Prepare Bluebeam markups <section-sfepra-pre-markups>`.
+#. :ref:`Export the Bluebeam markups to a file <section-sfepra-pre-measurements>`, usually named `m.csv`.
+#. :ref:`Prepare a database file <section-sfepra-pre-database>`, usually named `d.xlsx`.
+#. :ref:`Produce a SFEPRAPY input file <section-sfepra-pre-input_file>` by using FSETools.
 
-To Prepare Bluebeam Markup
-==========================
+.. _section-sfepra-pre-markups:
+
+Prepare Bluebeam Markup
+=======================
 
 Occupancy Type
 --------------
 
-.. warning::
-    Work in progress
+.. image:: OCCUPANCY_TYPE-create.png
+    :alt: create OCCUPANCY_TYPE
+    :width: 80%
 
 Compartment
 -----------
 
 Markup a fire compartment by using area measurement in Bluebeam. Ensure the following are set appropriately:
 
-- Subject should be COMPARTMENT to hint this object is used to indicate a fire compartment.
-- Label should be a string to represent the associated case name (i.e., simulation case name in SFEPRAPY).
-- Depth should be set as the room (floor to soffit) height.
-- Color should match the occupancy characteristics as defined in Section 4.1.
+* Subject should be COMPARTMENT to hint this object is used to indicate a fire compartment.
+* Label should be a string to represent the associated case name (i.e., simulation case name in SFEPRAPY).
+* Depth should be set as the room (floor to soffit) height.
+* Color should match the occupancy characteristics as defined in Section 4.1.
 
 Case name (i.e. Label) should be unique among all COMPARTMENT objects.
 
 .. image:: COMPARTMENT-create.png
-  :alt: create COMPARTMENT
+    :alt: create COMPARTMENT
+    :width: 80%
 
 Fire Spread Path
 ----------------
 
 Markup a fire travel path (or room depth) by using area measurement in Bluebeam. Ensure the following are set appropriately:
 
-- Subject should be COMPARTMENT_LENGTH to hint this object is used to indicate a fire travel path (or room depth).
-- Label should be a string to represent the associated case name (i.e., simulation case name in SFEPRAPY).
+* Subject should be COMPARTMENT_LENGTH to hint this object is used to indicate a fire travel path (or room depth).
+* Label should be a string to represent the associated case name (i.e., simulation case name in SFEPRAPY).
 
 A compartment (or case name) can only have one COMPARTMENT_LENGTH.
 
 .. image:: COMPARTMENT_LENGTH-create.png
-  :alt: create COMPARTMENT_LENGTH
+    :alt: create COMPARTMENT_LENGTH
+    :width: 80%
 
 Window
 ------
 
 Markup a fire compartment by using area measurement in Bluebeam. Ensure the following are set appropriately:
--	Subject should be WINDOW (or DOOR) to hint this object is used to indicate a window opening (or a door opening).
--	Label should be a string to represent the associated case name (i.e., simulation case name in SFEPRAPY).
--	Depth should be the window (or door) clear opening height.
+
+* Subject should be WINDOW (or DOOR) to hint this object is used to indicate a window opening (or a door opening).
+* Label should be a string to represent the associated case name (i.e., simulation case name in SFEPRAPY).
+* Depth should be the window (or door) clear opening height.
 
 Ensure all ventilation openings are appropriately marked up.
 
 .. image:: WINDOW-create.png
-  :alt: create WINDOW
+    :alt: create WINDOW
+    :width: 80%
 
 Door
 ----
 
-todo
+.. image:: DOOR-create.png
+    :alt: create DOOR
+    :width: 80%
 
 Special Circumstances
 ---------------------
@@ -84,36 +93,51 @@ Special Circumstances
 Repeated Compartments
 ~~~~~~~~~~~~~~~~~~~~~
 
-todo
+Only one simulation case is necessary for compartments share similar/identical geometry and ventilation arrangements.
+Once a base case is measured, the repeated compartments only needs to measure the floor area (i.e. Compartment) with its
+name/label identical to the base case but with a trailing underscore. Below shows an example.
+
+.. image:: repeated-compartments.png
+    :alt: Repeated compartments
+    :width: 80%
 
 Repeated Floors
 ~~~~~~~~~~~~~~~
 
-Where a floor plate repeats for example on levels 3 to 10 the drawing sheet for this can be named “L03-L10”
+Where a floor plate repeats for example on levels one to ten the drawing sheet for this can be named “L01-L10”
 
-.. image:: duplicated_levels.png
-  :alt: Duplicated levels
+.. image:: repeated-levels.png
+    :alt: Repeated levels
+    :width: 80%
 
-To Export Bluebeam Markup data
-==============================
+.. _section-sfepra-pre-measurements:
+
+Export Bluebeam Markup Data
+===========================
 
 Ensure the following headers are made visible when exporting.
 
 .. image:: MEASUREMENT_FILE-required_columns.png
-  :alt: MEASUREMENT_FILE required columns
-
-To toggle headers for exporting:
+    :alt: MEASUREMENT_FILE required columns
+    :width: 80%
 
 .. image:: MEASUREMENT_FILE-toggle_columns.png
-  :alt: MEASUREMENT_FILE toggle columns
+    :alt: MEASUREMENT_FILE toggle columns
+    :width: 80%
 
-To Prepare Database File
-========================
+.. _section-sfepra-pre-database:
 
-A database “d” file containing design fire input parameters for the different occupancy types is required. Ieuan or Ian can give you an example file to use and a template will be uploaded.
+Prepare Database File
+=====================
 
-To Produce SFEPRAPY Input File
-==============================
+A database file (usually named `d.xlsx`) containing design fire input parameters for the different occupancy types is
+required. Contact Ian  or Ieuan to obtain a template database file.
+
+
+.. _section-sfepra-pre-input_file:
+
+Produce SFEPRAPY Input File
+===========================
 
 This step is fairly straight forward, select the `d.xlsx` and `m.csv` then click `Submit` button. Then the resultant
 SFEPRAPY input file will be saved under the same folder containing `m.csv`.
@@ -122,7 +146,8 @@ If no file is produced then it is likely that there are errors in the `d.xlsx` o
 Console (View -> Console). In the example below, compartment length is missing for compartment (simulation case) `L01B`.
 
 .. image:: debug.png
-  :alt: Debug
+    :alt: Debug
+    :width: 80%
 
 .. important::
 
