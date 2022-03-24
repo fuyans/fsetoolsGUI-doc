@@ -1,6 +1,6 @@
-************
-Preprocessor
-************
+*********************
+SFEPRAPY Preprocessor
+*********************
 
 This tool is designed to enhance the efficiency in both preparing and reviewing the input file by reducing the time spent and avoiding potential errors.
 
@@ -13,6 +13,9 @@ A database file for the design fire input parameters must also be created and th
 
 To Add a Occupancy Type
 =======================
+
+.. warning::
+    Work in progress
 
 To Add a Compartment
 ====================
