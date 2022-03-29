@@ -177,11 +177,6 @@ Input parameters, their description, data type and dimensions are documented bel
 
     [:math:`kg/m³`] Density of the structural member.
 
-.. py:data:: beam_temperature_goal
-    :type: float
-
-    [:math:`K`] Structural element (steel) failure temperature in Kelvin for goal seek.
-
 .. py:data:: protection_protected_perimeter
     :type: float
 
@@ -313,8 +308,7 @@ this output file is produced upon completion of the simulation case. Below shows
     ...             & ...                               & ...                                   & ...
     \end{matrix}
 
-Following above, each row (except the first row) records the sampled stochastic inputs and simulation outputs for the
-iteration
+Each row of the output (as above) contains the deterministic parameters that are used per iteration.
 
 .. py:data:: index
     :type: int
@@ -387,12 +381,13 @@ iteration
 .. py:data:: solver_steel_temperature_solved
     :type: float
 
-    todo
+    The actual steel temperature from the last solver's iteration. if :py:data:`solver_time_equivalence_solved` is :math:`\text{True}` 
+    then this should be in the range of :py:data:`solver_temperature_goal` :math:`\pm` :py:data:`solver_tol`.
 
 .. py:data:: solver_time_critical_temp_solved
     :type: float
 
-    todo
+    The time taken for the structural element to reach :py:data:`solver_steel_temperature_solved` when exposed to the selected design fire.
 
 .. py:data:: solver_protection_thickness
     :type: float
@@ -407,7 +402,8 @@ iteration
 .. py:data:: solver_time_equivalence_solved
     :type: float
 
-    The solved time equivalence value.
+    The solved time equivalence value. This is the time taken for the streuctural element to reach :py:data:`solver_steel_temperature_solved` 
+    when exposed to the standard fire [5]_.
 
 Reference
 =========
@@ -416,3 +412,4 @@ Reference
 .. [2]  DIN, *Eurocode 1: Actions on structures - Part 1-2: General actions - Actions on structures exposed to fire; German version EN 1991-1-2:2002 + AC:2009*. DIN Deutsches Institut für Normung e. V., Sep. 2015.
 .. [3]  BSI, *PD 6688-1-2:2007 Background paper to the UK National Annex to BS EN 1991-1-2*, BSI, London, 2007.
 .. [4]  J\. Zehfuss and D\. Hosser, *A parametric natural fire model for the structural fire design of multi-storey buildings*, Fire Safety Journal, vol. 42, no. 2, pp. 115–126, Mar. 2007.
+.. [5]  BSI, *BS ISO 834-1:1999 Fire resistance tests. Elements of building construction. General requirements.*, BSI, London, 1991.
