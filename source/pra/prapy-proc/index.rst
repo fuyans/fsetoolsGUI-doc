@@ -5,7 +5,7 @@ SFEPRAPY Processor
 Input File
 ==========
 
-A input file should be a spreadsheet file in CSV or *.xlsx format. Below shows an example.
+A input file should be a spreadsheet file in csv or xlsx format. Below shows an example.
 
 .. math::
 
