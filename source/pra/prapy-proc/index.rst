@@ -374,7 +374,7 @@ Each row of the output (as above) contains the deterministic parameters that are
 
     [:math:`s`] Fire extinction time.
 
-    | For :py:data:`fire_type` 0 the extinction time is currently not determined.
+    | For :py:data:`fire_type` 0 the extinction time is not determined.
     | For :py:data:`fire_type` 1 the extinction time is determined at the back face of the travelling fire reaching the end of the room.
     | For :py:data:`fire_type` 2 the extinction time is determined as the variable :math:`t_{3,x}` in J. Zehfuss and D. Hosser [4]_.
 
