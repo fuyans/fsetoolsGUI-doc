@@ -5,7 +5,7 @@ SFEPRAPY Processor
 Input File
 ==========
 
-A input file should be a spreadsheet file in csv or xlsx format. Below shows an example.
+An input file should be a spreadsheet file in csv or xlsx format. Below shows an example.
 
 .. math::
 
@@ -22,8 +22,8 @@ A input file should be a spreadsheet file in csv or xlsx format. Below shows an 
     ...                             & ...                   & ...                   & ...
     \end{matrix}
 
-The first column are the required input parameters by the time equivalence Monte Carlo simulation routine.
-The other columns are input parameters of specific simulation cases. There is no limits on the number of simulation
+The first column is the required input parameters by the time equivalence Monte Carlo simulation routine.
+The other columns are input parameters of specific simulation cases. There are no limits on the number of simulation
 cases.
 
 Input parameters, their description, data type and dimensions are documented below.
@@ -31,7 +31,7 @@ Input parameters, their description, data type and dimensions are documented bel
 .. py:data:: case_name
     :type: str
 
-    An unique name for a simulation case. It should be unique among all simulation cases. This will be used as a file
+    A unique name for a simulation case. It should be unique among all simulation cases. This will be used as a file
     name to save MCS outputs, thus it should be file name safe on the operating system.
 
 .. py:data:: fire_mode
@@ -86,7 +86,7 @@ Input parameters, their description, data type and dimensions are documented bel
     :type: float
 
     [:math:`m`] Height of test structure element within the compartment for TFM. This can be altered to assess the
-    influence of height in tall compartments. Need to assess worst case height for columns.
+    influence of height in tall compartments. Need to assess the worst-case height for columns.
 
 .. py:data:: beam_position_horizontal
     :type: float
@@ -125,7 +125,7 @@ Input parameters, their description, data type and dimensions are documented bel
     :type: float
 
     [:math:`s`] End of simulation. This should be set so that output data is produced allowing the target reliability
-    to be determined. Normally set it to 4 hours and longer period of time for greater room length in order for
+    to be determined. Normally set it to 4 hours and a longer period of time for greater room length in order for
     travelling fire to propagate the entire room.
 
 .. py:data:: fire_load_density
@@ -170,7 +170,7 @@ Input parameters, their description, data type and dimensions are documented bel
 .. py:data:: beam_cross_section_area
     :type: float
 
-    [:math:`m²`] Cross sectional area of the section.
+    [:math:`m²`] Cross-section area of the structural member.
 
 .. py:data:: beam_rho
     :type: float
@@ -205,7 +205,7 @@ Input parameters, their description, data type and dimensions are documented bel
 .. py:data:: solver_temperature_goal
     :type: float
 
-    [:math:`K`] The temperature to be solved for. This is critical temperature of the beam structural element, i.e. 550
+    [:math:`K`] The temperature to be solved for. This is the critical temperature of the beam structural element, i.e. 550
     or 620 °C.
 
 .. py:data:: solver_max_iter
@@ -218,14 +218,14 @@ Input parameters, their description, data type and dimensions are documented bel
 .. py:data:: solver_thickness_lbound
     :type: float
 
-    [:math:`m`] The smallest value that the protection thickness can be. This is used to solve the maximum steel
-    temperature at :py:data:`solver_temperature_goal`.
+    [:math:`m`] The smallest protection thickness. This is used to solve the maximum steel temperature at 
+    :py:data:`solver_temperature_goal`.
 
 .. py:data:: solver_thickness_ubound
     :type: float
 
-    [:math:`m`] The greatest value that the protection thickness can be. This is used to solve the maximum steel
-    temperature at :py:data:`solver_temperature_goal`.
+    [:math:`m`] The greatest protection thickness. This is used to solve the maximum steel temperature at 
+    :py:data:`solver_temperature_goal`.
 
 .. py:data:: solver_tol
     :type: float
@@ -243,7 +243,7 @@ Input parameters, their description, data type and dimensions are documented bel
 .. py:data:: timber_exposed_area
     :type: float
 
-    [:math:`m²`] Exposed timber surface within the compartment, includes CLT slab, glulam columns and glulam beams.
+    [:math:`m²`] Exposed timber surface within the compartment, including CLT slab, glulam columns and glulam beams.
     Set :py:data:`timber_exposed_area` to :math:`0` to omit timber involvement.
 
 .. py:data:: timber_charring_rate
@@ -273,7 +273,7 @@ Input parameters, their description, data type and dimensions are documented bel
 .. py:data:: timber_solver_tol
     :type: float
 
-    [:math:`s`] Tolerance of the solver. Convergence is sought if change in time equivalence is less than
+    [:math:`s`] Tolerance of the solver. Convergence is sought if the change in time equivalence is less than
     :py:data:`timber_solver_tol`.
 
 
@@ -293,8 +293,8 @@ Below shows an example directory tree including input and output files:
         ├── case_c.csv
         ...
 
-Where :literal:`.\\mcs.out\\case_name.csv` contain results of each simulation case (as per :py:data:`case_name`) and
-this output file is produced upon completion of the simulation case. Below shows how an output file looks like.
+Where :literal:`.\\mcs.out\\case_name.csv` contains the results of each simulation case (as per :py:data:`case_name`) and
+this output file is produced upon completion of the simulation case. Below shows what an output file looks like.
 
 .. math::
 
@@ -367,17 +367,39 @@ Each row of the output (as above) contains the deterministic parameters that are
     | 1: Travelling fire
     | 2: Parametric fire (DIN)
 
-.. py:data:: extinction
+.. py:data:: t1
     :type: float
 
     .. versionadded:: 0.1.3
 
-    [:math:`s`] Fire extinction time.
+    [:math:`s`] Fire growth phase end time.
 
-    | For :py:data:`fire_type` 0 the extinction time is not determined.
-    | For :py:data:`fire_type` 1 the extinction time is determined at the back face of the travelling fire reaching the end of the room.
-    | For :py:data:`fire_type` 2 the extinction time is determined as the variable :math:`t_{3,x}` in J. Zehfuss and D. Hosser [4]_.
+    | For :py:data:`fire_type` 0 this is currently not determined.
+    | For :py:data:`fire_type` 1 determiend as the time that the fire back face starting to move forward.
+    | For :py:data:`fire_type` 2 determined as the variable :math:`t_1` in J. Zehfuss and D. Hosser [4]_.
 
+.. py:data:: t2
+    :type: float
+
+    .. versionadded:: 0.1.3
+
+    [:math:`s`] Fire decay phase start time.
+
+    | For :py:data:`fire_type` 0 this is currently not determiend.
+    | For :py:data:`fire_type` 1 determiend as the time that the fire front face reaching the room end.
+    | For :py:data:`fire_type` 2 determined as the variable :math:`t_{x,2}` in J. Zehfuss and D. Hosser [4]_.
+
+.. py:data:: t3
+    :type: float
+
+    .. versionadded:: 0.1.3
+
+    [:math:`s`] Fire decay phase start time.
+
+    | For :py:data:`fire_type` 0 this is currently not determiend.
+    | For :py:data:`fire_type` 1 determiend as the time the fire back face reaching the room end.
+    | For :py:data:`fire_type` 2 determined as the variable :math:`t_{x,3}` in J. Zehfuss and D. Hosser [4]_.
+    
 .. py:data:: solver_steel_temperature_solved
     :type: float
 
@@ -387,7 +409,7 @@ Each row of the output (as above) contains the deterministic parameters that are
 .. py:data:: solver_time_critical_temp_solved
     :type: float
 
-    The time taken for the structural element to reach :py:data:`solver_steel_temperature_solved` when exposed to the selected design fire.
+    The exposure time for the structural element to reach :py:data:`solver_steel_temperature_solved` when exposed to the selected design fire.
 
 .. py:data:: solver_protection_thickness
     :type: float
@@ -397,12 +419,12 @@ Each row of the output (as above) contains the deterministic parameters that are
 .. py:data:: solver_iter_count
     :type: float
 
-    Number of iterations took to solve the time equivalence.
+    The number of iterations took to solve the time equivalence.
 
 .. py:data:: solver_time_equivalence_solved
     :type: float
 
-    The solved time equivalence value. This is the time taken for the streuctural element to reach :py:data:`solver_steel_temperature_solved` 
+    The solved time equivalence value. This is the exposure time for the structural element to reach :py:data:`solver_steel_temperature_solved` 
     when exposed to the standard fire [5]_.
 
 Reference
