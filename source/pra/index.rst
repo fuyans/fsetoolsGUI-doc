@@ -1,7 +1,7 @@
 PRA
 ###
 
-Probabilistic Reliability Analysis (Structure)
+Time Equivalence Probabilistic Reliability Analysis
 
 .. toctree::
     :maxdepth: 2
