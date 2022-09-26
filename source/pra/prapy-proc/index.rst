@@ -1,4 +1,3 @@
-******************
 SFEPRAPY Processor
 ******************
 
@@ -56,7 +55,7 @@ Input parameters, their description, data type and dimensions are documented bel
     
     [:math:`m`] Breadth of room (the shorter dimension).
 
-.. py:data:: 
+.. py:data:: room_depth
     :type: float
 
     [:math:`m`] Depth of room (the greater dimension).
@@ -324,6 +323,7 @@ Each row of the output (as above) contains the deterministic parameters that are
 
 .. py:data:: fire_combustion_efficiency
     :type: float
+    :noindex:
 
     See :py:data:`fire_combustion_efficiency`.
 
