@@ -213,5 +213,7 @@ To check for updates, simply click the version label located at the bottom right
     b1/index.rst
     b3/index.rst
     b4/index.rst
+    fds/index.rst
+    safir/index.rst
     pra/index.rst
     misc/index.rst
