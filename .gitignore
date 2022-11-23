@@ -133,3 +133,4 @@ dmypy.json
 
 build/*
 source/_build/
+venv-py/*
